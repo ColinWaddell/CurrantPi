@@ -1,5 +1,5 @@
 <?php
-  function secondsToTime($seconds) {
+  function seconds_to_time($seconds) {
       $dtF = new DateTime("@0");
       $dtT = new DateTime("@$seconds");
       return $dtF->diff($dtT)->format('%ad %hh %im %ss');
@@ -79,7 +79,7 @@
             $temp = intval($output)/1000;
 
             $output = shell_exec('echo "$(</proc/uptime awk \'{print $1}\')"');
-            $time_alive = secondsToTime(intval($output));
+            $time_alive = seconds_to_time(intval($output));
           ?>
 
           <table class="table table-striped">
@@ -100,7 +100,6 @@
       <div class="row">
         <div class="col-lg-12">
          <h4>Storage</h4>
-
 
           <?php
             $output = shell_exec('df -H');
@@ -139,9 +138,6 @@
             </tr>
            </tbody>
           </table>
-
-
-
         </div>
       </div>
 
