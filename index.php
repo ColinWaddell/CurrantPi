@@ -2,7 +2,7 @@
   function seconds_to_time($seconds) {
       $dtF = new DateTime("@0");
       $dtT = new DateTime("@$seconds");
-      return $dtF->diff($dtT)->format('%ad %hh %im %ss');
+      return $dtF->diff($dtT)->format('%ad %hh %im');
   }
 
   function pretty_baud($baud) {
