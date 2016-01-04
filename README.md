@@ -2,7 +2,7 @@ I wanted to have a simple way of checking out my Raspberry Pi's board temperatur
 
 Known Kludges
 -------------
-Takes 1 second to load in order to take two samples of the network Tx/Rx a second apart in order to determine the transfer rates. 
+Takes 1 second to load in order to take two samples of the network Tx/Rx bit-count a second apart in order to determine the current transfer rates. 
  
 Screenshot
 ----------
