@@ -6,4 +6,4 @@ Takes 1 second to load in order to take two samples of the network Tx/Rx bit-cou
  
 Screenshot
 ----------
-<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?raw=true" align="left" width="500" >
+<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" align="left" width="768" >
