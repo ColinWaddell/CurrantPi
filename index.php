@@ -42,62 +42,13 @@
   <body>
 
     <div class="container">
-      <div class="header clearfix">
-        <h3 class="text-muted title_logo_text">Raspberry Pi - Board Details</h3>
-        <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
-      </div>
-
       <div class="row">
-        <div class="col-lg-6">
-          <h4>Network</h4>
-
-           <?php
-            $output = shell_exec('./transfer_rate.sh');
-            $rates = explode(' ', $output);
-           ?>
-
-          <table class="table table-striped table-hover">
-            <tbody>
-            <tr>
-              <td><p>Down:</p></td>
-              <td><p class="text-right"><?php echo pretty_baud($rates[0]);?></p></td>
-            </tr>
-            <tr>
-              <td><p>Up:</p></td>
-              <td><p class="text-right"><?php echo pretty_baud($rates[1]);?></p></td>
-            </tr>
-            </tbody>
-          </table>
+        <div class="col-lg-6 title_area">
+          <h2>Raspberry Pi</h2>
+          <h3 class="text-muted">Board Details</h3>
+          <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
         </div>
 
-        <div class="col-lg-6">
-          <h4>Hardware</h4>
-
-          <?php
-            $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');
-            $temp = intval($output)/1000;
-
-            $output = shell_exec('echo "$(</proc/uptime awk \'{print $1}\')"');
-            $time_alive = seconds_to_time(intval($output));
-          ?>
-
-          <table class="table table-striped table-hover">
-            <tbody>
-            <tr>
-              <td><p>Time Alive: </p></td>
-              <td><p class="text-right"><?php echo "$time_alive";?></p></td>
-            </tr>
-            <tr>
-              <td><p>Board Temperature: </p></td>
-              <td><p class="text-right"><?php echo "$temp&deg;C";?></p></td>
-            </tr>
-           </tbody>
-          </table>
-        </div>
-      </div>
-
-
-      <div class="row">
         <div class="col-lg-6">
          <h4>Memory</h4>
 
@@ -153,31 +104,54 @@
            </tbody>
           </table>
         </div>
+      </div>
 
+
+      <div class="row">
         <div class="col-lg-6">
-         <h4>Processor</h4>
+          <h4>Hardware</h4>
 
           <?php
-            $output = shell_exec('cat /proc/cpuinfo');
-            $table_rows = preg_split ('/$\R?^/m', $output);
-            // string trim ( string $str [, string $character_mask = " \t\n\r\0\x0B" ] )
+            $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');
+            $temp = intval($output)/1000;
+
+            $output = shell_exec('echo "$(</proc/uptime awk \'{print $1}\')"');
+            $time_alive = seconds_to_time(intval($output));
           ?>
 
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <?php
-
-                ?>
-              </tr>
-            </thead>
+          <table class="table table-striped table-hover">
             <tbody>
             <tr>
-               <?php
-
-              ?>           
+              <td><p>Time Alive: </p></td>
+              <td><p class="text-right"><?php echo "$time_alive";?></p></td>
+            </tr>
+            <tr>
+              <td><p>Board Temperature: </p></td>
+              <td><p class="text-right"><?php echo "$temp&deg;C";?></p></td>
             </tr>
            </tbody>
+          </table>
+        </div>
+
+        <div class="col-lg-6">
+           <h4>Network</h4>
+
+           <?php
+            $output = shell_exec('./transfer_rate.sh');
+            $rates = explode(' ', $output);
+           ?>
+
+          <table class="table table-striped table-hover">
+            <tbody>
+            <tr>
+              <td><p>Down:</p></td>
+              <td><p class="text-right"><?php echo pretty_baud($rates[0]);?></p></td>
+            </tr>
+            <tr>
+              <td><p>Up:</p></td>
+              <td><p class="text-right"><?php echo pretty_baud($rates[1]);?></p></td>
+            </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -275,6 +249,13 @@
           <?php echo $_SERVER[SERVER_NAME]; ?>
            - 
           <?php echo $_SERVER[SERVER_SOFTWARE]; ?>
+        </p>
+        <p>
+         <?php
+            $name_full = shell_exec('cat /proc/cpuinfo | grep name');
+            $name = explode (': ', $name_full);
+            echo $name[1];
+          ?>
         </p>
         <p><a href="https://github.com/ColinWaddell/RPi-Board-Info">Source</a></p>
       </footer>

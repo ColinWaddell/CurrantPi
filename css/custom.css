@@ -59,17 +59,21 @@ body {
   margin-top: 1.5rem;
 }
 
-/* Title Logo */
+/* Title Stuff */
+.title_area{
+  text-align: center;
+}
+
+
 .title_logo{
-  width: 32px;
-  display: inline;
-  margin-left: 10px;
+  width: 48px;
 }
 
 .title_logo_text{
   display: inline;
 }
 
+/* Progress Bars */
 .progress{
   margin-bottom: 0;
 }
