@@ -1,4 +1,6 @@
-I wanted to have a simple way of checking out my Raspberry Pi's board temperature and other useful stats' so I cobbled together some php and bash to server up over [lighttpd](https://www.lighttpd.net/). 
+Why?
+---
+I wanted to have a simple way of checking out my Raspberry Pi's board temperature, storage space, memory usage and other stats' so I cobbled together some php and bash to serve up using the [webserver](https://www.lighttpd.net/) on my [Raspberry Pi](https://www.raspberrypi.org/). 
 
 Known Kludges
 -------------
