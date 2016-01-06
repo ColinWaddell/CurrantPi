@@ -59,25 +59,6 @@ body {
   margin-top: 1.5rem;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
 /* Title Logo */
 .title_logo{
   width: 32px;
@@ -102,3 +83,33 @@ body {
 p {
   margin: 2px 0 2px;
 }
+
+#storage_pct_bars{
+  min-width: 0; 
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  /* dont force a wider percentage bar on a smaller screen */
+  #storage_pct_bars{
+   min-width: 8em; 
+  }
+}
+
+/*

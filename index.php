@@ -202,7 +202,7 @@
                   foreach($table_header as $header) {
                     if ($header!==""){
                       if($col_count==4){
-                        echo "<th><p style='min-width: 6em;' class='text-center'>$header</p></th>";
+                        echo "<th><p id='storage_pct_bars' class='text-center'>$header</p></th>";
                       }
                       else if($col_count==5){
                         echo "<th><p class='text-right'>$header</p></th>";
@@ -276,6 +276,7 @@
            - 
           <?php echo $_SERVER[SERVER_SOFTWARE]; ?>
         </p>
+        <p><a href="https://github.com/ColinWaddell/RPi-Board-Info">Source</a></p>
       </footer>
 
     </div> <!-- /container -->
