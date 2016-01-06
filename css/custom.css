@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 48em) {
   .container {
-    max-width: 46rem;
+    max-width: 48em;
   }
 }
 .container-narrow > hr {
@@ -87,4 +87,18 @@ body {
 
 .title_logo_text{
   display: inline;
+}
+
+.progress{
+  margin-bottom: 0;
+}
+
+.progress-bar{
+  color: #333;
+  background-color: #aaa;
+  padding: 0 0 0 4px;
+}
+
+p {
+  margin: 2px 0 2px;
 }
