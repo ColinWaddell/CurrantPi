@@ -56,12 +56,15 @@
           <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
         </div>
 
+      </div>
+      <div class="row">
+
         <div class="col-lg-6">
              <h4>Load average</h4>
 
              <?php
               $output = shell_exec('uptime');
-              $loadavg = explode(' ', substr($output2, strpos($output2,'load average:')+14));
+              $loadavg = explode(' ', substr($output, strpos($output,'load average:')+14));
              ?>
 
             <table class="table table-striped table-hover">
