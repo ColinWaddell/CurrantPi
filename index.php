@@ -39,7 +39,6 @@
     <title>Raspberry Pi - Board Details</title>
 
     <link href="favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
