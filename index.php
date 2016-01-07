@@ -9,13 +9,18 @@
     $baud = intval($baud);
     $ret = "unknown";
 
-    if ($baud > 1000){
+    if ($baud > 1000000){
+      $baud = $baud/1000000;
+      $ret = "$baud Mb/s";
+    }
+    else if ($baud > 1000){
       $baud = $baud/1000;
       $ret = "$baud Kb/s";
     }
     else{
       $ret = "$baud b/s";
     }
+
 
     return $ret;
   }
@@ -137,7 +142,7 @@
            <h4>Network</h4>
 
            <?php
-            $output = shell_exec('./transfer_rate.sh');
+            $output = shell_exec('sh ./transfer_rate.sh');
             $rates = explode(' ', $output);
            ?>
 
@@ -246,9 +251,9 @@
 
       <footer class="footer">
         <p>
-          <?php echo $_SERVER[SERVER_NAME]; ?>
+          <?php echo $_SERVER['SERVER_NAME']; ?>
            - 
-          <?php echo $_SERVER[SERVER_SOFTWARE]; ?>
+          <?php echo $_SERVER['SERVER_SOFTWARE']; ?>
         </p>
         <p>
          <?php
