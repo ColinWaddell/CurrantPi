@@ -246,9 +246,9 @@
 
       <footer class="footer">
         <p>
-          <?php echo $_SERVER[SERVER_NAME]; ?>
+          <?php echo $_SERVER['SERVER_NAME']; ?>
            - 
-          <?php echo $_SERVER[SERVER_SOFTWARE]; ?>
+          <?php echo $_SERVER['SERVER_SOFTWARE']; ?>
         </p>
         <p>
          <?php
