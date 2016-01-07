@@ -65,7 +65,7 @@
       <div class="row">
 
         <div class="col-lg-6">
-           <h4><i class="fa fa-tasks"></i> Load average</h4>
+           <h4><i class="fa fa-bar-chart"></i> Load average</h4>
 
            <?php
             $output = shell_exec('uptime');
@@ -199,7 +199,7 @@
 
       <div class="row">
         <div class="col-lg-12">
-         <h4><i class="fa fa-hdd-o"></i> Storage</h4>
+         <h4><i class="fa fa-database"></i> Storage</h4>
 
           <?php
             $output = shell_exec('df -H');
