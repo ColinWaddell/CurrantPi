@@ -42,6 +42,8 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
   </head>
@@ -63,7 +65,7 @@
       <div class="row">
 
         <div class="col-lg-6">
-           <h4>Load average</h4>
+           <h4><i class="fa fa-tasks"></i> Load average</h4>
 
            <?php
             $output = shell_exec('uptime');
@@ -148,7 +150,7 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h4>Hardware</h4>
+          <h4><i class="fa fa-server"></i> Hardware</h4>
 
           <?php
             $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');
@@ -173,7 +175,7 @@
         </div>
 
         <div class="col-lg-6">
-           <h4>Network</h4>
+           <h4><i class="fa fa-exchange"></i> Network</h4>
 
            <?php
             $output = shell_exec('sh ./transfer_rate.sh');
@@ -197,7 +199,7 @@
 
       <div class="row">
         <div class="col-lg-12">
-         <h4>Storage</h4>
+         <h4><i class="fa fa-hdd-o"></i> Storage</h4>
 
           <?php
             $output = shell_exec('df -H');
@@ -296,7 +298,7 @@
             echo $name[1];
           ?>
         </p>
-        <p><a href="https://github.com/ColinWaddell/RPi-Board-Info">Source</a></p>
+        <p><a href="https://github.com/ColinWaddell/RPi-Board-Info"><i class="fa fa-github-alt"></i> Source</a></p>
       </footer>
 
     </div> <!-- /container -->
