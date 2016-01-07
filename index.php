@@ -257,7 +257,7 @@
         </p>
         <p>
          <?php
-            $name_full = shell_exec('cat /proc/cpuinfo | grep name');
+            $name_full = shell_exec('cat /proc/cpuinfo | grep name | head -1');
             $name = explode (': ', $name_full);
             echo $name[1];
           ?>
