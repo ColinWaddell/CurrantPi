@@ -60,30 +60,29 @@
       <div class="row">
 
         <div class="col-lg-6">
-             <h4>Load average</h4>
+           <h4>Load average</h4>
 
-             <?php
-              $output = shell_exec('uptime');
-              $loadavg = explode(' ', substr($output, strpos($output,'load average:')+14));
-             ?>
+           <?php
+            $output = shell_exec('uptime');
+            $loadavg = explode(' ', substr($output, strpos($output,'load average:')+14));
+           ?>
 
-            <table class="table table-striped table-hover">
-              <tbody>
-              <tr>
-                <td><p>1min:</p></td>
-                <td><p class="text-right"><?php echo $loadavg[0];?></p></td>
-              </tr>
-              <tr>
-                <td><p>5min:</p></td>
-                <td><p class="text-right"><?php echo $loadavg[1];?></p></td>
-              </tr>
-              <tr>
-                <td><p>15min:</p></td>
-                <td><p class="text-right"><?php echo $loadavg[2];?></p></td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="table table-striped table-hover">
+            <tbody>
+            <tr>
+              <td><p>1min:</p></td>
+              <td><p class="text-right"><?php echo substr($loadavg[0], -1);?></p></td>
+            </tr>
+            <tr>
+              <td><p>5min:</p></td>
+              <td><p class="text-right"><?php echo substr($loadavg[1], -1);?></p></td>
+            </tr>
+            <tr>
+              <td><p>15min:</p></td>
+              <td><p class="text-right"><?php echo $loadavg[2];?></p></td>
+            </tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="col-lg-6">
