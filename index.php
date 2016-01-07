@@ -50,10 +50,37 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 title_area">
+        <div class="col-lg-12 title_area">
           <h2>Raspberry Pi</h2>
           <h3 class="text-muted">Board Details</h3>
           <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
+        </div>
+
+        <div class="col-lg-6">
+             <h4>Load average</h4>
+
+             <?php
+              $output = shell_exec('uptime');
+              $loadavg = explode(' ', substr($output2, strpos($output2,'load average:')+14);)
+             ?>
+
+            <table class="table table-striped table-hover">
+              <tbody>
+              <tr>
+                <td><p>1min:</p></td>
+                <td><p class="text-right"><?php echo $loadavg[0];?></p></td>
+              </tr>
+              <tr>
+                <td><p>5min:</p></td>
+                <td><p class="text-right"><?php echo $loadavg[1];?></p></td>
+              </tr>
+              <tr>
+                <td><p>15min:</p></td>
+                <td><p class="text-right"><?php echo $loadavg[2];?></p></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div class="col-lg-6">
