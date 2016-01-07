@@ -61,7 +61,7 @@
 
              <?php
               $output = shell_exec('uptime');
-              $loadavg = explode(' ', substr($output2, strpos($output2,'load average:')+14);)
+              $loadavg = explode(' ', substr($output2, strpos($output2,'load average:')+14));
              ?>
 
             <table class="table table-striped table-hover">
