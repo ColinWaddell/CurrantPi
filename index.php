@@ -137,7 +137,7 @@
            <h4>Network</h4>
 
            <?php
-            $output = shell_exec('./transfer_rate.sh');
+            $output = shell_exec('sh ./transfer_rate.sh');
             $rates = explode(' ', $output);
            ?>
 
