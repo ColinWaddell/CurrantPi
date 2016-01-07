@@ -91,7 +91,7 @@
         </div>
 
         <div class="col-lg-6">
-         <h4>Memory</h4>
+         <h4><i class="fa fa-bolt"></i> Memory</h4>
 
           <?php
             $output = shell_exec('cat /proc/meminfo');
