@@ -57,6 +57,9 @@
         </div>
 
       </div>
+
+      <hr />
+
       <div class="row">
 
         <div class="col-lg-6">
@@ -71,11 +74,11 @@
             <tbody>
             <tr>
               <td><p>1min:</p></td>
-              <td><p class="text-right"><?php echo substr($loadavg[0], -1);?></p></td>
+              <td><p class="text-right"><?php echo substr($loadavg[0], 0, -1);?></p></td>
             </tr>
             <tr>
               <td><p>5min:</p></td>
-              <td><p class="text-right"><?php echo substr($loadavg[1], -1);?></p></td>
+              <td><p class="text-right"><?php echo substr($loadavg[1], 0, -1);?></p></td>
             </tr>
             <tr>
               <td><p>15min:</p></td>
