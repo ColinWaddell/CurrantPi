@@ -51,16 +51,16 @@
   <body>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 title_area">
+
+      <div class="header clearfix title-area">
+        <div class="col-sm-8 title-text">
           <h2>Raspberry Pi</h2>
           <h3 class="text-muted">Board Details</h3>
+        </div>
+        <div class="col-sm-4 title-logo">
           <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
         </div>
-
       </div>
-
-      <hr />
 
       <div class="row">
 
@@ -163,7 +163,7 @@
           <table class="table table-striped table-hover">
             <tbody>
             <tr>
-              <td><p>Time Alive: </p></td>
+              <td><p>Uptime: </p></td>
               <td><p class="text-right"><?php echo "$time_alive";?></p></td>
             </tr>
             <tr>
@@ -287,7 +287,7 @@
 
       <footer class="footer">
         <p>
-          <?php echo $_SERVER['SERVER_NAME']; ?>
+          <?php echo $_SERVER['SERVER_NAME'] . " (" . $_SERVER['SERVER_ADDR'] . ")"; ?> 
            - 
           <?php echo $_SERVER['SERVER_SOFTWARE']; ?>
         </p>

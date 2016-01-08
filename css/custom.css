@@ -60,17 +60,21 @@ body {
 }
 
 /* Title Stuff */
-.title_area{
+.title-area{
+  border-bottom: 1px solid #ddd;
+}
+
+.title-logo{
   text-align: center;
 }
 
-
-.title_logo{
+.title-logo > img{
   width: 48px;
-}
+  margin-top: 19px;
+} 
 
-.title_logo_text{
-  display: inline;
+.title-text{
+  text-align: center;
 }
 
 /* Progress Bars */
@@ -114,6 +118,18 @@ p {
   #storage_pct_bars{
    min-width: 8em; 
   }
+
+  .title-text{
+    text-align: left;
+  }
+
+  .title-logo{
+    text-align: right;
+  }
+
+  .title-logo > img{
+    margin-top: 19px;
+  } 
 }
 
 /*
