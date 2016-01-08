@@ -33,8 +33,7 @@
           aria-valuenow="<?php echo $mem_used_percentage; ?>" 
           aria-valuemin="0" 
           aria-valuemax="100" 
-          style="min-width: 2em; width: <?php echo $mem_used_percentage; ?>%;"
-        >
+          style="min-width: 2em; width: <?php echo $mem_used_percentage; ?>%;" >
           <?php echo $mem_used_percentage; ?>%
         </div>
       </div>
