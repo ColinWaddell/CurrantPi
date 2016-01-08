@@ -2,15 +2,9 @@
 
 <?php
   $output = shell_exec('cat /proc/meminfo');
-  $table_rows = preg_split ('/$\R?^/m', $output);
-  $row_mem_total = $table_rows[0];
-  $row_mem_free  = $table_rows[1];
 
-  $mem_total = explode(' ', $row_mem_total);
-  $mem_total = $mem_total[count($mem_total)-2];
-
-  $mem_free = explode(' ', $row_mem_free);
-  $mem_free = $mem_free[count($mem_free)-2];
+  $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $3}'"));
+  $mem_total = intval(shell_exec("free -m | awk '/Mem/ {print $2}'"));
 
   $mem_used_percentage = floor((($mem_total-$mem_free)/$mem_total)*100);
 ?>
@@ -22,7 +16,7 @@
       <p>Free:</p>
     </td>
     <td>
-     <p class="text-right"><?php echo floor($mem_free/1024); ?>MB&nbsp;</p>
+     <p class="text-right"><?php echo $mem_free; ?>&nbsp;MB</p>
     </td>
   </tr>
   <tr>
@@ -30,7 +24,7 @@
       <p>Total:</p>
     </td>
     <td>
-     <p class="text-right"><?php echo floor($mem_total/1000); ?>MB</p>
+     <p class="text-right"><?php echo $mem_total; ?>&nbsp;MB</p>
     </td>
   </tr>
   <tr>
