@@ -1,7 +1,7 @@
 <h4><i class="fa fa-bolt"></i> Memory</h4>
 
 <?php
-  $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $3}'"));
+  $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $4}'"));
   $mem_total = intval(shell_exec("free -m | awk '/Mem/ {print $2}'"));
   $mem_used_percentage = floor((($mem_total-$mem_free)/$mem_total)*100);
 ?>
