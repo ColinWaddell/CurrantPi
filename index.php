@@ -21,9 +21,9 @@
       $ret = "$baud b/s";
     }
 
-
     return $ret;
   }
+
 ?>
 
 <!DOCTYPE html>
