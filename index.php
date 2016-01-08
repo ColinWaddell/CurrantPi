@@ -1,4 +1,17 @@
 <?php
+  /**
+   * index.php
+   *
+   * Raspberry Pi - Board Details
+   *
+   * @author     Colin Waddell
+   * @license    https://opensource.org/licenses/MIT  The MIT License (MIT)
+   * @link       https://github.com/ColinWaddell/RPi-Board-Info
+   */
+
+   /*
+    * Libraries and helper function
+   */
   include ('lib/string_helpers.php');
 ?>
 
@@ -29,7 +42,6 @@
           <?php include ('content/memory.php'); ?>
         </div>
       </div>
-
 
       <div class="row">
         <!-- Hardware -->
