@@ -96,6 +96,10 @@ p {
   min-width: 0; 
 }
 
+footer > p{
+  margin-bottom: 8px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
   /* Remove the padding we set earlier */
