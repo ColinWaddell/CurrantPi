@@ -24,9 +24,17 @@
     return $ret;
   }
 
+  // See https://en.wikipedia.org/wiki/Load_(computing)#Unix-style_load_calculation 
+  // for more info on load average % calculation
   function pretty_load_average($load_average){
-    $avg = intval(substr($load_avgerage, 0, -1));
-    $avg_percent = $avg * 100;
-    return "{$avg_percent}% Utilized";
+    $load_average = substr($load_average, 0, -1);
+    if ($load_average < 1.0) {
+      $avg_percent = (($load_average-1) * -1) * 100; // * -1 to get a positive percentage
+      return "{$avg_percent}% Idling ($load_average)";
+    }
+    else {
+      $avg_percent = ($load_average-1) * 100;
+      return "{$avg_percent}% Overloaded ($load_average)";
+    }
   }
 
