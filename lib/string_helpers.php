@@ -25,8 +25,8 @@
   }
 
   function pretty_load_average($load_average){
-    $avg = intval(substr($load_avgerage, 0, -1));
-    $avg_percent = $avg * 100;
-    return "{$avg_percent}% Utilized";
+    $load_average = substr($load_average, 0, -1);
+    $avg_percent = ($load_average) * 100;
+    return "{$avg_percent}% Utilized ($load_average)";
   }
 
