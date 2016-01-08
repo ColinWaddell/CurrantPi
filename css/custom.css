@@ -41,24 +41,6 @@ body {
   margin: 2rem 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 3rem 0;
-}
-.marketing p + h4 {
-  margin-top: 1.5rem;
-}
-
 /* Title Stuff */
 .title-area{
   border-bottom: 1px solid #ddd;
@@ -84,9 +66,21 @@ body {
 
 .progress-bar{
   color: #000;
-  background-color: #aaa;
-  padding: 0 0 0 4px;
 }
+
+.progress-bar-buffers{
+  background: #333;
+}
+.progress-bar-cache{
+  background: #666;
+}
+.progress-bar-free{
+  background: #999;
+}
+.progress-bar-used{
+  background: #CCC;
+}
+
 
 p {
   margin: 2px 0 2px;
