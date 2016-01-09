@@ -10,5 +10,6 @@
     echo $name[1];
   ?>
 </p>
-<p><a href="https://opensource.org/licenses/MIT">The MIT License (MIT)</a>
 <p><a href="https://github.com/ColinWaddell/RPi-Board-Info"><i class="fa fa-github-alt"></i> Source</a></p>
+<hr />
+<p>© 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="LICENSE.txt"> MIT License.</a>
