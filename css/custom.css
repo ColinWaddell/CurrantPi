@@ -65,20 +65,20 @@ body {
 }
 
 .progress-bar{
-  color: #000;
+  color: #FFF;
 }
 
 .progress-bar-buffers{
-  background: #333;
+  background: #4F81BD;
 }
 .progress-bar-cache{
-  background: #666;
+  background: #F79646;
 }
 .progress-bar-free{
-  background: #999;
+  background: #9BBB59;
 }
 .progress-bar-used{
-  background: #CCC;
+  background: #C0504D;
 }
 
 

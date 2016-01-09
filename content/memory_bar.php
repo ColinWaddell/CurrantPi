@@ -12,6 +12,14 @@
 ?>
 
 <div class="progress">
+  <div class="progress-bar progress-bar-used" 
+    role="progressbar" 
+    aria-valuenow="<?php echo $used_act;?>" 
+    aria-valuemin="0" 
+    aria-valuemax="<?php echo $total_act;?>" 
+    style="width: <?php echo $used_act;?>%">
+    <?php echo intval($used_act);?>% Used
+  </div>  
   <div class="progress-bar progress-bar-buffers" 
     role="progressbar" 
     aria-valuenow="<?php echo $buffers;?>" 
@@ -35,13 +43,5 @@
     aria-valuemax="<?php echo $total_act;?>" 
     style="width: <?php echo $free_p;?>%">
     <span class="sr-only"><?php echo intval($free);?>% Free</span>
-  </div>  
-  <div class="progress-bar progress-bar-used" 
-    role="progressbar" 
-    aria-valuenow="<?php echo $used_act;?>" 
-    aria-valuemin="0" 
-    aria-valuemax="<?php echo $total_act;?>" 
-    style="width: <?php echo $used_act;?>%">
-    <?php echo intval($used_act);?>% Used
   </div>  
 </div>
