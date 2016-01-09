@@ -14,11 +14,10 @@ Installation
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
+License
+-------
+<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a>
  
 Screenshot
 ----------
-<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" align="left" width="384" >
-
-License
--------
-<p>&copy; 2016 <a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt">Colin Waddell</a> under the terms of the<a href="LICENSE.txt"> MIT License.</a>
+<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" align="left" width="384" />
