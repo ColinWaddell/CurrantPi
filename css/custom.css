@@ -78,15 +78,15 @@ body {
 }
 .membar-key > span.membar-key-free,
 .progress-bar-free{
-  background: #B5A98C;
+  background: #aaa;
 }
 .membar-key > span.membar-key-used,
 .progress-bar-used{
-  background: #AB7D15;
+  background: #A99771;
 }
 .progress-bar-grey{
   color: #000;
-  background-color: #B5A98C;
+  background-color: #aaa;
   padding: 0 0 0 4px;
 }
 
