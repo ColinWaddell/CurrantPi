@@ -100,9 +100,9 @@ td.membar-key{
 
 .membar-key > span{
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #ddd;
-  color: white;
+  color: #fff;
   padding: 3px 8px;
   border-radius: 3px;
   text-align: center;
