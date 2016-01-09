@@ -47,13 +47,13 @@
 </div>
 
 <div class="row membar-info">
-  <div class="col-sm-4 membar-buffers">
-    <p><span class"membar-square-buffers">&#9632;</span> Buffers</p>
+  <div class="col-sm-4 membar-key membar-key-buffers">
+    <p>Buffers</p>
   </div>
-  <div class="col-sm-4 membar-cache">
-    <p><span class"membar-square-cache">&#9632;</span> Cache</p>
+  <div class="col-sm-4 membar-key membar-key-cache">
+    <p>Cache</p>
   </div>
-  <div class="col-sm-4 membar-free">
-    <p><span class"membar-square-free">&#9632;</span> Free</p>
+  <div class="col-sm-4 membar-key membar-key-free">
+    <p>Free</p>
   </div>
 </div>

@@ -49,7 +49,7 @@
               <td>
                 <div class="progress">
                   <div
-                    class="progress-bar" 
+                    class="progress-bar progress-bar-grey" 
                     role="progressbar" 
                     aria-valuenow="<?php echo $percentage; ?>" 
                     aria-valuemin="0" 

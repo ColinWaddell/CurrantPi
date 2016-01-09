@@ -68,38 +68,49 @@ body {
   color: #FFF;
 }
 
+.membar-key > span.membar-key-buffers,
 .progress-bar-buffers{
-  background: #4F81BD;
+  background: #A8C545;
 }
+.membar-key > span.membar-key-cache,
 .progress-bar-cache{
-  background: #F79646;
+  background: #0092B2;
 }
+.membar-key > span.membar-key-free,
 .progress-bar-free{
-  background: #9BBB59;
+  background: #B5A98C;
 }
+.membar-key > span.membar-key-used,
 .progress-bar-used{
-  background: #C0504D;
+  background: #AB7D15;
+}
+.progress-bar-grey{
+  color: #000;
+  background-color: #B5A98C;
+  padding: 0 0 0 4px;
 }
 
-.membar-square-cache{
-  font-color: #F79646;
-  margin-right:3px;
+/* Custom memory bar options */
+.membar-key > p{
+  display: inline;
 }
-.membar-square-buffers{
-  font-color: #4F81BD;
-  margin-right:3px;
-}
-.membar-square-free{
-  font-color: #9BBB59;
-  margin-right:3px;
+td.membar-key{
+  width:4em;
 }
 
-
-.membar-info p{
+.membar-key > span{
+  margin-right: 5px;
+  font-size: 14px;
+  background-color: #ddd;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 3px;
   text-align: center;
+  display: block;
+  width:100%;
 }
 
-p {
+p{
   margin: 2px 0 2px;
 }
 
