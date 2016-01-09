@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Currant : Some cobbled together php to serve up from my Raspberry Pi which shows some useful information about the board.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Currant</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ColinWaddell/Currant">View on GitHub</a>
+
+          <h1 id="project_title">Currant</h1>
+          <h2 id="project_tagline">Some cobbled together php to serve up from my Raspberry Pi which shows some useful information about the board.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ColinWaddell/Currant/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ColinWaddell/Currant/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
+
+<p>I wanted to have a simple way of checking out my Raspberry Pi's board temperature, storage space, memory usage and other stats' so I cobbled together some php and bash to serve up using the <a href="https://www.lighttpd.net/">webserver</a> on my <a href="https://www.raspberrypi.org/">Raspberry Pi</a>. </p>
+
+<h2>
+<a id="known-kludges" class="anchor" href="#known-kludges" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known Kludges</h2>
+
+<ul>
+<li><p>The page takes at least 1 second to load in order to take two samples of the network Tx/Rx bit-count a second apart in order to determine the current transfer rates.</p></li>
+<li><p>Clearly I should be using an MVC rather than the inline-nightmare I've created.</p></li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>Clone this repo somewhere your webserver can see it.</li>
+<li>Cross Fingers. </li>
+<li>Point your browser at your webserver.</li>
+</ol>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p></p><p>© 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a></p>
+
+<h2>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshot</h2>
+
+<p><img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" align="left" width="384"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Currant maintained by <a href="https://github.com/ColinWaddell">ColinWaddell</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
