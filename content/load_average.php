@@ -9,54 +9,15 @@
   <tbody>
   <tr>
     <td><p>1 min:</p></td>
-    <td>
-      <div class="progress">
-        <div
-          class="progress-bar progress-bar-grey" 
-          role="progressbar" 
-          aria-valuenow="<?php echo percentage_load_average($loadavg[0]); ?>" 
-          aria-valuemin="0" 
-          aria-valuemax="100" 
-          style="width: <?php echo percentage_load_average($loadavg[0]); ?>%;"
-        >
-          <?php echo percentage_load_average($loadavg[0]) ?>%
-        </div>
-      </div>
-    </td>
+    <td><p class="text-right"><?php echo pretty_load_average($loadavg[0])?></p></td>
   </tr>
   <tr>
     <td><p>5 min:</p></td>
-    <td>
-      <div class="progress">
-        <div
-          class="progress-bar progress-bar-grey" 
-          role="progressbar" 
-          aria-valuenow="<?php echo percentage_load_average($loadavg[1]); ?>" 
-          aria-valuemin="0" 
-          aria-valuemax="100" 
-          style="width: <?php echo percentage_load_average($loadavg[1]); ?>%;"
-        >
-          <?php echo percentage_load_average($loadavg[1]) ?>%
-        </div>
-      </div>
-    </td>
+    <td><p class="text-right"><?php echo pretty_load_average($loadavg[1])?></p></td>
   </tr>
   <tr>
     <td><p>15 min:</p></td>
-    <td>
-      <div class="progress">
-        <div
-          class="progress-bar progress-bar-grey" 
-          role="progressbar" 
-          aria-valuenow="<?php echo percentage_load_average($loadavg[2]); ?>" 
-          aria-valuemin="0" 
-          aria-valuemax="100" 
-          style="width: <?php echo percentage_load_average($loadavg[2]); ?>%;"
-        >
-          <?php echo percentage_load_average($loadavg[2]) ?>%
-        </div>
-      </div>
-    </td>
+    <td><p class="text-right"><?php echo pretty_load_average($loadavg[2])?></p></td>
   </tr>
   </tbody>
 </table>
