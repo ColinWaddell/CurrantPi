@@ -45,3 +45,15 @@
     <span class="sr-only"><?php echo intval($free);?>% Free</span>
   </div>  
 </div>
+
+<div class="row membar-info">
+  <div class="col-sm-4 membar-buffers">
+    <p><span class"membar-square-buffers">&#9632;</span> Buffers</p>
+  </div>
+  <div class="col-sm-4 membar-cache">
+    <p><span class"membar-square-cache">&#9632;</span> Cache</p>
+  </div>
+  <div class="col-sm-4 membar-free">
+    <p><span class"membar-square-free">&#9632;</span> Free</p>
+  </div>
+</div>

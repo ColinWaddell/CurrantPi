@@ -81,6 +81,23 @@ body {
   background: #C0504D;
 }
 
+.membar-square-cache{
+  font-color: #F79646;
+  margin-right:3px;
+}
+.membar-square-buffers{
+  font-color: #4F81BD;
+  margin-right:3px;
+}
+.membar-square-free{
+  font-color: #9BBB59;
+  margin-right:3px;
+}
+
+
+.membar-info p{
+  text-align: center;
+}
 
 p {
   margin: 2px 0 2px;
