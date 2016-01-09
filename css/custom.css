@@ -68,19 +68,13 @@ body {
   color: #FFF;
 }
 
-.progress-bar-buffers{
-  background: #4F81BD;
-}
-.progress-bar-cache{
-  background: #F79646;
-}
 .progress-bar-free{
   background: #9BBB59;
 }
+
 .progress-bar-used{
   background: #C0504D;
 }
-
 
 p {
   margin: 2px 0 2px;
@@ -129,5 +123,3 @@ footer > p{
     margin-top: 19px;
   } 
 }
-
-/*
