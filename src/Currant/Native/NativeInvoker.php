@@ -75,6 +75,7 @@ class NativeInvoker
 
     /**
      * Gets the loading information
+     * @return array
      */
     public function getLoadInformation()
     {
@@ -100,6 +101,7 @@ class NativeInvoker
 
     /**
      * Gets the memory information
+     * @return array
      */
     public function getMemoryInformation()
     {
@@ -120,6 +122,26 @@ class NativeInvoker
         $information['buffers_p'] = (100*($information['buffers']/$information['total_act']));
         $information['cache_p'] = (100*($information['cache']/$information['total_act']));
         $information['used_act_p'] = (100*($information['used_act']/$information['total_act']));
+
+        return $information;
+    }
+
+
+    /**
+     * Gets the Storage Information
+     * @return array
+     */
+    public function getStorageInformation()
+    {
+        // The array with the hardware information
+        $information = array();
+
+        $output = shell_exec('df -H');
+        $table_rows = preg_split ('/$\R?^/m', $output);
+        $table_header = explode(' ', $table_rows[0]);
+
+        $information['table_rows'] = array_splice($table_rows, 1);
+        $information['table_header'] = array_splice($table_header, 0, count($table_header)-1);
 
         return $information;
     }

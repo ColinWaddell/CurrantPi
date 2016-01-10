@@ -32,7 +32,9 @@ class IndexController extends BaseController
         $this->data['networkInfo'] = $nativeInvoker->getNetworkInformation();
         $this->data['loadInfo'] = $nativeInvoker->getLoadInformation();
         $this->data['memoryInfo'] = $nativeInvoker->getMemoryInformation();
+        $this->data['storageInfo'] = $nativeInvoker->getStorageInformation();
 
+        // Renders the template
         return $template->render($this->data);
     }
 
