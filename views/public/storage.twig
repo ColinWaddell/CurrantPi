@@ -1,0 +1,83 @@
+<h4><i class="fa fa-database"></i> Storage</h4>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            {% set col_count = 0 %}
+
+            {% for header in storageInfo['table_header'] %}
+                {% if header %}
+                    {% if col_count==4 %}
+                        <th><p id='storage_pct_bars' class='text-center'>{{ header }}</p></th>
+
+                    {% elseif col_count==5 %}
+                        <th><p class='text-right'>{{ header }}</p></th>
+
+                    {% elseif col_count > 0 %}
+                        <th><p class='text-center'>{{ header }}</p></th>
+
+                    {% else %}
+                        <th><p>{{ header }}</p></th>
+
+                    {% endif %}
+
+                    {% set col_count = col_count+1 %}
+
+                {% endif %}
+
+            {% endfor %}
+
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            {% for row in storageInfo['table_rows'] %}
+
+                <tr>
+                    {% set items = row|split(' ') %}
+
+                    {% set col_count = 0 %}
+
+                    {% for item in items %}
+                        {% if item %}
+                            {% if col_count==4 %}
+                                {% set percentage = item|number_format %}
+                                    <td>
+                                        <div class="progress">
+                                            <div
+                                                    class="progress-bar progress-bar-grey"
+                                                    role="progressbar"
+                                                    aria-valuenow="{{ percentage }}"
+                                                    aria-valuemin="0"
+                                                    aria-valuemax="100"
+                                                    style="width: {{ percentage }}%;" >
+                                                {{ percentage }}%
+                                            </div>
+                                        </div>
+                                    </td>
+
+                            {% elseif col_count==5 %}
+                                <td><p class='text-right'>{{ item }}</p></td>
+
+                            {% elseif col_count > 0 %}
+                                <td><p class='text-center'>{{ item }}</p></td>
+                            {% else %}
+                                <td><p>{{ item }}</p></td>
+                            {% endif %}
+
+                            {% set col_count = col_count + 1 %}
+
+                        {% endif %}
+
+                    {% endfor %}
+                </tr>
+
+            {% endfor %}
+
+        </tr>
+
+    </tbody>
+
+</table>

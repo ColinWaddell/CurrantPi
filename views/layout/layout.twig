@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% include 'layout/header.twig' %}
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header clearfix title-area">
+        <!-- Banner -->
+        {% include 'layout/banner.twig' %}
+    </div>
+
+    {% block content %}{% endblock %}
+
+    <hr />
+
+    <!-- Footer -->
+    <footer class="footer">
+        {% include 'layout/footer.twig' %}
+    </footer>
+
+</div> <!-- /container -->
+
+</body>
+</html>
