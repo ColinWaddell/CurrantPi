@@ -1,7 +1,7 @@
  <h4><i class="fa fa-exchange"></i> Network</h4>
 
  <?php
-  $output = shell_exec('sh ./transfer_rate.sh');
+  $output = shell_exec('sh ./lib/transfer_rate.sh');
   $rates = explode(' ', $output);
  ?>
 
