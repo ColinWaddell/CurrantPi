@@ -29,6 +29,9 @@ class IndexController extends BaseController
         $nativeInvoker = new NativeInvoker($this->app->scriptsPath);
 
         $this->data['hardwareInfo'] = $nativeInvoker->getHardwareInformation();
+        $this->data['networkInfo'] = $nativeInvoker->getNetworkInformation();
+        $this->data['loadInfo'] = $nativeInvoker->getLoadInformation();
+        $this->data['memoryInfo'] = $nativeInvoker->getMemoryInformation();
 
         return $template->render($this->data);
     }

@@ -11,6 +11,7 @@
     <!-- Network -->
     <div class="col-lg-6">
         {#<?php include ('content/network.php'); ?>#}
+        {% include 'public/network.twig' %}
     </div>
 </div>
 
@@ -18,10 +19,12 @@
     <!-- Load Average -->
     <div class="col-lg-6">
         {#<?php include ('content/load_average.php'); ?>#}
+        {% include 'public/load_average.twig' %}
     </div>
     <div class="col-lg-6">
         <!-- Memory -->
         {#<?php include ('content/memory.php'); ?>#}
+        {% include 'public/memory.twig' %}
     </div>
 </div>
 
