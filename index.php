@@ -1,73 +1,30 @@
 <?php
-  /**
-   * index.php
-   *
-   * Raspberry Pi - Board Details
-   *
-   * @author     Colin Waddell
-   * @license    https://opensource.org/licenses/MIT  The MIT License (MIT)
-   * @link       https://github.com/ColinWaddell/RPi-Board-Info
-   */
 
-   /*
-    * Libraries and helper function
-   */
-  include ('lib/string_helpers.php');
-?>
+/**
+ * index.php
+ *
+ * Raspberry Pi - Board Details
+ *
+ * @author     Colin Waddell
+ * @author     Iago Oliveira da Silva
+ * @license    https://opensource.org/licenses/MIT  The MIT License (MIT)
+ * @link       https://github.com/ColinWaddell/RPi-Board-Info
+ */
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Header -->
-    <?php include ('content/header.php'); ?>
-  </head>
+ /*
+  * Libraries and helper function
+ */
 
-  <body>
+ini_set("display_errors", 1);
 
-    <div class="container">
+// Composer Autoload
+require_once 'vendor/autoload.php';
 
-      <div class="header clearfix title-area">
-        <!-- Banner -->
-        <?php include ('content/banner.php'); ?>
-      </div>
+// Slim Application
+$app = new \Slim\Slim();
 
-      <div class="row">
-        <!-- Hardware -->
-        <div class="col-lg-6">
-          <?php include ('content/hardware.php'); ?>
-        </div>
-        <!-- Network -->
-        <div class="col-lg-6">
-          <?php include ('content/network.php'); ?>
-        </div>
-      </div>
+// Slim configuration
+require __DIR__ . '/conf/bootstrap.php';
 
-      <div class="row">
-        <!-- Load Average -->
-        <div class="col-lg-6">
-          <?php include ('content/load_average.php'); ?>
-        </div>
-        <div class="col-lg-6">
-          <!-- Memory -->
-          <?php include ('content/memory.php'); ?>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- Storage -->
-        <div class="col-lg-12">
-          <?php include ('content/storage.php'); ?>
-        </div>
-      </div>
-
-      <hr />
-
-      <!-- Footer -->
-      <footer class="footer">
-        <?php include ('content/footer.php'); ?>
-      </footer>
-
-    </div> <!-- /container -->
-
-  </body>
-</html>
+// Run Slim
+$app->run();

@@ -1,0 +1,24 @@
+{
+  "name": "ColinWaddell/Currant",
+  "description": "Simple way of checking a Raspberry Pi status.",
+  "require": {
+    "slim/slim": "2.6",
+    "twig/twig": "1.23"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ColinWaddell"
+    }
+    ,{
+      "name": "sio-iago",
+      "email": "silva.io@outlook.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Currant\\" : "src/Currant"
+    }
+  },
+  "minimum-stability": "RC"
+}

@@ -1,0 +1,35 @@
+{% extends 'layout/layout.twig' %}
+
+{% block content %}
+
+<div class="row">
+    <!-- Hardware -->
+    <div class="col-lg-6">
+        {#<?php include ('content/hardware.php'); ?>#}
+        {% include 'public/hardware.twig' %}
+    </div>
+    <!-- Network -->
+    <div class="col-lg-6">
+        {#<?php include ('content/network.php'); ?>#}
+    </div>
+</div>
+
+<div class="row">
+    <!-- Load Average -->
+    <div class="col-lg-6">
+        {#<?php include ('content/load_average.php'); ?>#}
+    </div>
+    <div class="col-lg-6">
+        <!-- Memory -->
+        {#<?php include ('content/memory.php'); ?>#}
+    </div>
+</div>
+
+<div class="row">
+    <!-- Storage -->
+    <div class="col-lg-12">
+        {#<?php include ('content/storage.php'); ?>#}
+    </div>
+</div>
+
+{% endblock %}
