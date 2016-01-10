@@ -2,6 +2,16 @@
 body {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  font-family: 'Droid Sans Mono', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Varela Round', sans-serif;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -22,6 +32,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
+  font-family: 'Droid Sans Mono', sans-serif;
 }
 
 /* Custom page footer */
