@@ -5,7 +5,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Raspberry Pi - Board Details</title>
+<title>Currant Pi - Raspberry Pi Status</title>
 
 <link href="favicon.ico" type="image/x-icon" rel="icon" />
 

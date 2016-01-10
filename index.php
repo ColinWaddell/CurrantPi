@@ -2,11 +2,11 @@
   /**
    * index.php
    *
-   * Raspberry Pi - Board Details
+   * Currant Pi - Raspberry Pi Status
    *
    * @author     Colin Waddell
    * @license    https://opensource.org/licenses/MIT  The MIT License (MIT)
-   * @link       https://github.com/ColinWaddell/RPi-Board-Info
+   * @link       https://github.com/ColinWaddell/CurrantPi
    */
 
    /*
