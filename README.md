@@ -52,10 +52,6 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     rm -rf /tmp/CurrantPi-master
     ```
 
-Screenshot
-==========
-<a href="ttps://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" rel="some text"><img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot_small.png" width="380"/></a>
-
 License
 =======
 <p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a>
@@ -69,3 +65,10 @@ At this point you're waiting on me. I'd like to at least comment on pull request
 When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) tinker with the code. The shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code as simple (but not stupid), clean and readable as possible.
 
 *Code should be simple enough that any eager beginner can follow it.*
+
+
+Screenshot
+==========
+<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
+
+<hr />
