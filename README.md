@@ -17,14 +17,12 @@ Plus is looks pretty.
 ================================
 So there's a couple of routes to installing this. Follow the one which seems to fit you best.
 
-Prefered: I've already for a webserver and I'm comfortable using Git
---------------------------------------------------------------------
+####Prefered: I've already for a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it.
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
-I need more that that &#8593;
------------------------------
+####I need more that that &#8593;
 You can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no iterest in creating a backup of your current web servers content.
 
 Just copy and paste each section into a terminal on your Rasbberry Pi and hit enter. You may be asked for a password depending on your configuration.
