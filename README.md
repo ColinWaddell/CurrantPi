@@ -51,10 +51,9 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     sudo cp -r /tmp/CurrantPi-master/* /tmp/blah && 
     rm -rf /tmp/CurrantPi-master
     ```
+4. Visiting Currant by popping the address of your IP address into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
-License
-=======
-<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a>
+> Thanks to [_FranklY](https://www.reddit.com/r/raspberry_pi/comments/3zs89i/created_a_webinterface_to_keep_on_eye_on_how_my/cype3bd) and [rafspeik](https://github.com/rafspeik) for providing these instructions.
   
 Contributing
 ============
@@ -66,6 +65,9 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 *Code should be simple enough that any eager beginner can follow it.*
 
+License
+=======
+<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a>
 
 <a id="screenshot"></a>Screenshot
 ==========
