@@ -20,4 +20,4 @@ License
  
 Screenshot
 ----------
-<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" align="left" width="384" />
+<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png?loadnew=true" width="384" />
