@@ -10,11 +10,11 @@
     $ret = "unknown";
 
     if ($baud > 1000000){
-      $baud = $baud/1000000;
+      $baud = round($baud/1000000, 2);
       $ret = "$baud Mb/s";
     }
     else if ($baud > 1000){
-      $baud = $baud/1000;
+      $baud = round($baud/1000, 2);
       $ret = "$baud Kb/s";
     }
     else{
