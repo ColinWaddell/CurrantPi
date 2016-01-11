@@ -37,6 +37,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 2. Next create a backup of your webservers current content 
 
     ```
+    sudo mkdir /var/www/html_backup &&
     sudo mv -v /var/www/html/* /var/www/html_backup  && 
     mkdir /var/www/html
     ```
