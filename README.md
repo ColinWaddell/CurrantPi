@@ -54,7 +54,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 
 Screenshot
 ==========
-<a href="ttps://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" rel="some text">![Screenshot of Currant](https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png)]</a>
+<a href="ttps://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" rel="some text">![Screenshot of Currant](https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot_small.png)]</a>
 
 License
 =======
