@@ -1,6 +1,6 @@
 Contributing
 ============
-You can contribute to this project [pushing to your fork and submitting a pull request](https://github.com/thoughtbot/factory_girl_rails/compare/).
+You can contribute to this project [pushing to your fork and submitting a pull request](https://guides.github.com/activities/contributing-to-open-source/).
 
 At this point you're waiting on me. I'd like to at least comment on pull requests as soon as possible, but sometimes real-life gets in the way. I may suggest some changes or improvements or alternatives.
 
