@@ -11,7 +11,7 @@ It'll show you current information about:
  * Memory allocation
  * Available storage
  
-Plus is looks pretty.
+[Plus is looks pretty.](#screenshot)
  
 <a id="install"></a>Installation
 ================================
@@ -67,7 +67,7 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 *Code should be simple enough that any eager beginner can follow it.*
 
 
-Screenshot
+<a id="screenshot"></a>Screenshot
 ==========
 <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
 
