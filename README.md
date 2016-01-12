@@ -84,7 +84,7 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 License
 =======
-<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.txt"> MIT License.</a>
+<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.md"> MIT License.</a>
 
 <a id="screenshot"></a>Screenshot
 ==========
