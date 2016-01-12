@@ -18,9 +18,9 @@ It'll show you current information about:
  
 <a id="install"></a>Installation
 ================================
-CurrantPi is designed to work straight out the box. You should be able to just download the latest release either as a zip file, or by cloning the repo and then make it visible to your webserver.
+CurrantPi is designed to work straight out the box. To install you need to download the latest release either as a zip file, or by cloning the repo and then make it visible to your webserver.
 
-So there's a couple of routes to installing this. Follow the one which seems to fit you best.
+There's a couple of routes to installing this. Follow the one which fits you best.
 
 ####Prefered: I've already for a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it, i.e.:
@@ -31,7 +31,7 @@ So there's a couple of routes to installing this. Follow the one which seems to 
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
-####Prefered-ish: I've already for a webserver and I can easily drop some files in it's working directory
+####Prefered-ish: I've already got a webserver and I can easily drop some files in it's working directory
 1. [Download the latest release](https://github.com/ColinWaddell/CurrantPi/archive/master.zip)
 2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
 3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
@@ -76,7 +76,7 @@ You can contribute to this project [pushing to your fork and submitting a pull r
 
 At this point you're waiting on me. I'd like to at least comment on pull requests as soon as possible, but sometimes real-life gets in the way. I may suggest some changes or improvements or alternatives.
 
-When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) tinker with the code. The shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code as simple (but not stupid), clean and readable as possible. 
+When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) once it's running tinker with the code. The shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code simple (but not stupid), clean and readable as possible. 
 
 **Code should be simple enough that any eager beginner can follow it.**
 
