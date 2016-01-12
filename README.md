@@ -23,12 +23,16 @@ CurrantPi is designed to work straight out the box. You should be able to just d
 So there's a couple of routes to installing this. Follow the one which seems to fit you best.
 
 ####Prefered: I've already for a webserver and I'm comfortable using Git
-1. Clone this repo somewhere your webserver can see it.
+1. Clone this repo somewhere your webserver can see it, i.e.:
+
+    ````
+    git clone git@github.com:ColinWaddell/CurrantPi.git /var/www/html/currantpi
+    ````
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
 ####Prefered-ish: I've already for a webserver and I can easily drop some files in it's working directory
-1. Download the latest release
+1. [Download the latest release](https://github.com/ColinWaddell/CurrantPi/archive/master.zip)
 2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
 3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
