@@ -48,7 +48,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     wget https://github.com/ColinWaddell/CurrantPi/archive/master.zip -O temp.zip && 
     unzip temp.zip && 
     rm temp.zip && 
-    sudo cp -r /tmp/CurrantPi-master/* /tmp/blah && 
+    sudo cp -r /tmp/CurrantPi-master/* /var/www/html/ && 
     rm -rf /tmp/CurrantPi-master
     ```
 4. Visiting Currant by popping the address of your IP address into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
