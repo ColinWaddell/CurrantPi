@@ -29,26 +29,26 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 
 1. First you'll need to have a webserver up an running on your Pi. The following will install and setup lighttp on your Raspberry Pi. I'm assuing you're running an installation which uses the ```apt``` distro system.
     ```
-    sudo apt-get install lighttpd php5-cgi && 
-    sudo lighttpd-enable-mod fastcgi fastcgi-php && 
+    sudo apt-get install lighttpd php5-cgi
+    sudo lighttpd-enable-mod fastcgi fastcgi-php
     sudo service lighttpd force-reload
     ```
 
 2. Next create a backup of your webservers current content 
 
     ```
-    sudo mv /var/www/html /var/www/html_backup  && 
-    mkdir /var/www/html
+    sudo mv /var/www/html /var/www/html_backup
+    sudo mkdir /var/www/html
     ```
     
 3. Install Currant.
 
     ```
     cd /tmp/
-    wget https://github.com/ColinWaddell/CurrantPi/archive/master.zip -O temp.zip && 
-    unzip temp.zip && 
-    rm temp.zip && 
-    sudo cp -r /tmp/CurrantPi-master/* /var/www/html/ && 
+    wget https://github.com/ColinWaddell/CurrantPi/archive/master.zip -O temp.zip
+    unzip temp.zip
+    rm temp.zip
+    sudo cp -r /tmp/CurrantPi-master/* /var/www/html/
     rm -rf /tmp/CurrantPi-master
     ```
 4. Visiting Currant by popping the address of your IP address into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
