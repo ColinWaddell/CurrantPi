@@ -2,6 +2,8 @@ CurrantPi
 =========
 Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#install)</sup></sup>.
 
+Currant Pi will show you current information about:
+
 It'll show you current information about:
 
  * Board temperature
@@ -16,6 +18,8 @@ It'll show you current information about:
 
 [![CurrantPi Small Screenshot](https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot_small.png)](#screenshot)
  
+<hr />
+
 <a id="install"></a>Installation
 ================================
 CurrantPi is designed to work straight out the box. To install you need to download the latest release either as a zip file, or by cloning the repo and then make it visible to your webserver.
@@ -69,6 +73,8 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 4. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
 > Thanks to [_FranklY](https://www.reddit.com/r/raspberry_pi/comments/3zs89i/created_a_webinterface_to_keep_on_eye_on_how_my/cype3bd) and [rafspeik](https://github.com/rafspeik) for helping with these instructions.
+
+<hr />
   
 Contributing
 ============
@@ -82,6 +88,8 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 *If you are keen to see Currant Pi implemented using an MVC framework, please see the [SlimMVC branch](https://github.com/ColinWaddell/CurrantPi/tree/slimmvc) created by github user [sio-iago](https://github.com/sio-iago).*
 
+<hr />
+
 License
 =======
 <p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.md"> MIT License.</a>
@@ -89,5 +97,3 @@ License
 <a id="screenshot"></a>Screenshot
 ==========
 <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
-
-<hr />
