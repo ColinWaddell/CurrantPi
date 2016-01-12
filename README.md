@@ -12,15 +12,26 @@ It'll show you current information about:
  * Available storage
  
 [Plus is looks pretty.](#screenshot)
+
+
+[![CurrantPi Small Screenshot](https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot_small.png)](#screenshot)
  
 <a id="install"></a>Installation
 ================================
+CurrantPi is designed to work straight out the box. You should be able to just download the latest release either as a zip file, or by cloning the repo and then make it visible to your webserver.
+
 So there's a couple of routes to installing this. Follow the one which seems to fit you best.
 
 ####Prefered: I've already for a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it.
 2. Cross Fingers. 
 3. Point your browser at your webserver.
+
+####Prefered-ish: I've already for a webserver and I can easily drop some files in it's working directory
+1. Download the latest release
+2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
+3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
+
 
 ####I need more that that &#8593;
 You can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no iterest in creating a backup of your current web servers content.
@@ -51,7 +62,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     sudo cp -r /tmp/CurrantPi-master/* /var/www/html/
     rm -rf /tmp/CurrantPi-master
     ```
-4. Visiting Currant by popping the address of your IP address into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
+4. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
 > Thanks to [_FranklY](https://www.reddit.com/r/raspberry_pi/comments/3zs89i/created_a_webinterface_to_keep_on_eye_on_how_my/cype3bd) and [rafspeik](https://github.com/rafspeik) for providing these instructions.
   
