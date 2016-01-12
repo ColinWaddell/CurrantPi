@@ -1,6 +1,6 @@
 CurrantPi
 =========
-Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup>[if you've already got a web-server running](#install)</sup>.
+Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#install)</sup></sup>.
 
 It'll show you current information about:
 
