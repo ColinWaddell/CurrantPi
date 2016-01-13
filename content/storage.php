@@ -25,7 +25,7 @@
                 break;
                 
               case 4:
-                echo "<th><p id='storage_pct_bars' class='text-center'>$header</p></th>";
+                echo "<th><p id='storage_pct_bars' class='text-center'>% Used</p></th>";
                 break;
                 
               case 5:

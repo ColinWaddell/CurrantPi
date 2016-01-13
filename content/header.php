@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!-- Custom Fonts -->
 <link href="css/fonts.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Dosis:400,800,600,300,500|Open+Sans:400,700,300,800' rel='stylesheet' type='text/css'>
 <!-- Custom styles for this template -->
 <link href="css/custom.css" rel="stylesheet">
 
