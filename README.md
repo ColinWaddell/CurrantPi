@@ -26,7 +26,7 @@ CurrantPi is designed to work straight out the box. To install you need to downl
 
 There's a couple of routes to installing this. Follow the one which fits you best.
 
-####Prefered: I've already for a webserver and I'm comfortable using Git
+####Preferred: I've already for a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it, i.e.:
 
     ````
@@ -35,18 +35,18 @@ There's a couple of routes to installing this. Follow the one which fits you bes
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
-####Prefered-ish: I've already got a webserver and I can easily drop some files in it's working directory
+####Preferred-ish: I've already got a webserver and I can easily drop some files in it's working directory
 1. [Download the latest release](https://github.com/ColinWaddell/CurrantPi/archive/master.zip)
 2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
 3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
 
 ####I need more that that &#8593;
-You can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no interest in creating a backup of your current web servers content.
+You can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no interest in creating a backup of your current web server's content.
 
 Just copy and paste each section into a terminal on your Rasbberry Pi and hit enter. You may be asked for a password depending on your configuration.
 
-1. First you'll need to have a webserver up an running on your Pi. The following will install and setup lighttp on your Raspberry Pi. I'm assuing you're running an installation which uses the ```apt``` distro system.
+1. First you'll need to have a webserver up an running on your Pi. The following will install and setup lighttp on your Raspberry Pi. I'm assuming you're running an installation which uses the ```apt``` distro system.
     ```
     sudo apt-get install lighttpd php5-cgi
     sudo lighttpd-enable-mod fastcgi fastcgi-php
@@ -82,7 +82,7 @@ You can contribute to this project [pushing to your fork and submitting a pull r
 
 At this point you're waiting on me. I'd like to at least comment on pull requests as soon as possible, but sometimes real-life gets in the way. I may suggest some changes or improvements or alternatives.
 
-When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) once it's running tinker with the code. The shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code simple (but not stupid), clean and readable as possible. 
+When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) once it's running tinker with the code. They shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code simple (but not stupid), clean and readable as possible. 
 
 **Code should be simple enough that any eager beginner can follow it.**
 
