@@ -15,18 +15,27 @@
         $col_count = 0;
         foreach($table_header as $header) {
           if ($header!==""){
-            if($col_count==4){
-              echo "<th><p id='storage_pct_bars' class='text-center'>$header</p></th>";
+            switch ($col_count) {
+              case 0:
+                echo "<th><p>$header</p></th>";
+                break;
+                
+              case 2:
+                /* Hide this column */
+                break;
+                
+              case 4:
+                echo "<th><p id='storage_pct_bars' class='text-center'>$header</p></th>";
+                break;
+                
+              case 5:
+                echo "<th><p class='text-right'>$header</p></th>";
+                break;
+                
+              default:
+                  echo "<th><p class='text-center'>$header</p></th>";
             }
-            else if($col_count==5){
-              echo "<th><p class='text-right'>$header</p></th>";
-            }
-            else if($col_count>0){
-              echo "<th><p class='text-center'>$header</p></th>";
-            }
-            else{
-              echo "<th><p>$header</p></th>";
-            }
+
             $col_count++;
           }
         }
@@ -42,33 +51,41 @@
         $col_count = 0;
         foreach($items as $item){
           if ($item!==""){
-            if($col_count==4){ 
-              $percentage = intval($item);
-              ?>
-
-              <td>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-grey" 
-                    role="progressbar" 
-                    aria-valuenow="<?php echo $percentage; ?>" 
-                    aria-valuemin="0" 
-                    aria-valuemax="100" 
-                    style="width: <?php echo $percentage; ?>%;"
-                  >
-                    <?php echo $percentage; ?>%
-                  </div>
-                </div>
-              </td>
-            <?php }
-            else if($col_count==5){
-              echo "<td><p class='text-right'>$item</p></td>";
-            }
-            else if($col_count>0){
-              echo "<td><p class='text-center'>$item</p></td>";
-            }
-            else{
-              echo "<td><p>$item</p></td>";
+            switch ($col_count) {
+              case 0:
+                echo "<td><p>$item</p></td>";
+                break;
+                
+              case 2:
+                /* Hide this column */
+                break;
+                
+              case 4:
+                $percentage = intval($item);
+                ?>
+                  <td>
+                    <div class="progress">
+                      <div
+                        class="progress-bar progress-bar-grey" 
+                        role="progressbar" 
+                        aria-valuenow="<?php echo $percentage; ?>" 
+                        aria-valuemin="0" 
+                        aria-valuemax="100" 
+                        style="width: <?php echo $percentage; ?>%;"
+                      >
+                        <?php echo $percentage; ?>%
+                      </div>
+                    </div>
+                  </td>
+                <?php
+                break;
+                
+              case 5:
+                echo "<td><p class='text-right'>$item</p></td>";
+                break;
+                
+              default:
+                  echo "<td><p class='text-center'>$item</p></td>";
             }
             $col_count++;
           }
