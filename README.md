@@ -43,7 +43,7 @@ There's a couple of routes to installing this. Follow the one which fits you bes
 
 
 ####I need more that that &#8593;
-You can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no interest in creating a backup of your current web server's content.
+In the follwoing instructions you can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no interest in creating a backup of your current web server's content.
 
 Just copy and paste each section into a terminal on your Rasbberry Pi and hit enter. You may be asked for a password depending on your configuration.
 
