@@ -16,8 +16,8 @@ It'll show you current information about:
 [Plus is looks pretty.](#screenshot)
 
 
-<a href="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png">
-  <img style="box-shadow: -4px 4px 10px 3px rgba(0,0,0,0.3);" src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
+<a  style="box-shadow: -4px 4px 10px 3px rgba(0,0,0,0.3);" href="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png">
+  <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
 </a>
  
 <hr />
