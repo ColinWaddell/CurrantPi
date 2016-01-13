@@ -33,5 +33,5 @@
   function pretty_load_average($load_average){
     $load_average = substr($load_average, 0, -1);
     $avg_percent = ($load_average) * 100;
-    return "{$avg_percent}% Utilized ($load_average)";
+    return "<span class='text-muted'>{$avg_percent}%</span>&nbsp; &nbsp; &nbsp;$load_average";
   }
