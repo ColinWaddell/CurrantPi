@@ -150,6 +150,9 @@ footer > p{
     padding-right: 0;
     padding-left: 0;
   }
+  body{
+    padding-top: 0;
+  }
   /* Space out the masthead */
   .header {
     margin-bottom: 2rem;
@@ -173,7 +176,7 @@ footer > p{
   }
 
   .title-logo > img{
-    margin-top: 19px;
+    margin: 28px 0 0 0;
   } 
 }
 

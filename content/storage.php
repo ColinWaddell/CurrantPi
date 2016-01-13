@@ -11,11 +11,11 @@
 <table class="table table-striped table-hover">
   <thead>
     <tr>
-      <th><p class='text-muted'>Filesystem</p></th>
-      <th><p class='text-muted text-center'>Size</p></th>
-      <th><p class='text-muted text-center'>Available</p></th>
-      <th><p class='text-muted text-center' id='storage_pct_bars'>% Used</p></th>
-      <th><p class='text-muted text-right'>Mounted</p></th>
+      <th><p>Filesystem</p></th>
+      <th><p class='text-center'>Size</p></th>
+      <th><p class='text-center'>Available</p></th>
+      <th><p id='storage_pct_bars' class='text-center'>% Used</p></th>
+      <th><p class='text-right'>Mounted</p></th>
     </tr>
   </thead>
   <tbody>
