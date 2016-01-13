@@ -29,7 +29,7 @@
                 aria-valuemin="0" 
                 aria-valuemax="<?php echo $total_act;?>" 
                 style="width: <?php echo $used_act_p;?>%">
-                <span class="sr-only"><?php echo intval($used_act_p);?>% Used</span>
+                <span class="sr-only"><?php echo strval(round($used_act_p, 2));?>% Used</span>
               </div>  
               <div class="progress-bar progress-bar-buffers" 
                 role="progressbar" 
@@ -37,7 +37,7 @@
                 aria-valuemin="0" 
                 aria-valuemax="<?php echo $total_act;?>" 
                 style="width: <?php echo $buffers_p;?>%">
-                <span class="sr-only"><?php echo intval($buffers);?>% Buffers</span>
+                <span class="sr-only"><?php echo strval(round($buffers_p, 2));?>% Buffers</span>
               </div>
               <div class="progress-bar progress-bar-cache" 
                 role="progressbar" 
@@ -45,7 +45,7 @@
                 aria-valuemin="0" 
                 aria-valuemax="<?php echo $total_act;?>" 
                 style="width: <?php echo $cache_p;?>%">
-                <span class="sr-only"><?php echo intval($cache);?>% Cache</span>
+                <span class="sr-only"><?php echo strval(round($cache_p, 2));?>% Cache</span>
               </div>  
               <div class="progress-bar progress-bar-free" 
                 role="progressbar" 
@@ -53,7 +53,7 @@
                 aria-valuemin="0" 
                 aria-valuemax="<?php echo $total_act;?>" 
                 style="width: <?php echo $free_p;?>%">
-                <span class="sr-only"><?php echo intval($free);?>% Free</span>
+                <span class="sr-only"><?php echo strval(round($free_p, 2));?>% Free</span>
               </div>  
             </div>
           </div>
