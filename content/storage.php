@@ -11,35 +11,11 @@
 <table class="table table-striped table-hover">
   <thead>
     <tr>
-      <?php
-        $col_count = 0;
-        foreach($table_header as $header) {
-          if ($header!==""){
-            switch ($col_count) {
-              case 0:
-                echo "<th><p>$header</p></th>";
-                break;
-                
-              case 2:
-                /* Hide this column */
-                break;
-                
-              case 4:
-                echo "<th><p id='storage_pct_bars' class='text-center'>% Used</p></th>";
-                break;
-                
-              case 5:
-                echo "<th><p class='text-right'>$header</p></th>";
-                break;
-                
-              default:
-                  echo "<th><p class='text-center'>$header</p></th>";
-            }
-
-            $col_count++;
-          }
-        }
-      ?>
+      <th><p class='text-muted'>Filesystem</p></th>
+      <th><p class='text-muted text-center'>Size</p></th>
+      <th><p class='text-muted text-center'>Available</p></th>
+      <th><p class='text-muted text-center' id='storage_pct_bars'>% Used</p></th>
+      <th><p class='text-muted text-right'>Mounted</p></th>
     </tr>
   </thead>
   <tbody>
