@@ -16,7 +16,9 @@ It'll show you current information about:
 [Plus is looks pretty.](#screenshot)
 
 
-[![CurrantPi Small Screenshot](https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png)](#screenshot)
+<a href="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png">
+  <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
+</a>
  
 <hr />
 
