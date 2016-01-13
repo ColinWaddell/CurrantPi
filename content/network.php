@@ -1,4 +1,4 @@
- <h4><i class="fa fa-exchange"></i> Network</h4>
+ <h4><i class="demo-icon icon-exchange"></i> Network</h4>
 
  <?php
   $output = shell_exec('sh ./lib/transfer_rate.sh');

@@ -1,4 +1,4 @@
-<h4><i class="fa fa-bolt"></i> Memory</h4>
+<h4><i class="demo-icon icon-sliders"></i> Memory</h4>
 
 <?php
   $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $3}'"));

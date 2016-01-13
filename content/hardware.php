@@ -1,4 +1,4 @@
-<h4><i class="fa fa-server"></i> Hardware</h4>
+<h4><i class="demo-icon icon-server"></i> Hardware</h4>
 
 <?php
   $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');

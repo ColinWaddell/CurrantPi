@@ -1,4 +1,4 @@
- <h4><i class="fa fa-area-chart"></i> CPU Load Average</h4>
+ <h4><i class="demo-icon icon-chart-area"></i> CPU Load Average</h4>
 
  <?php
   $output = shell_exec('uptime');

@@ -1,4 +1,4 @@
-<h4><i class="fa fa-database"></i> Storage</h4>
+<h4><i class="demo-icon icon-database"></i> Storage</h4>
 
 <?php
   $output = shell_exec('df -H');

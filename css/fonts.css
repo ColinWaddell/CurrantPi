@@ -14,3 +14,14 @@
   src: local('Varela Round'), local('VarelaRound-Regular'), url(./fonts/varela-round.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* font-awesome */
+@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/fontello.eot?83590039');
+  src: url('./fonts/fontello.eot?83590039#iefix') format('embedded-opentype'),
+       url('./fonts/fontello.woff?83590039') format('woff'),
+       url('./fonts/fontello.ttf?83590039') format('truetype'),
+       url('./fonts/fontello.svg?83590039#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
