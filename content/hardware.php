@@ -2,7 +2,7 @@
 
 <?php
   $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');
-  $temp = intval($output)/1000;
+  $temp = round(($output)/1000, 1);
 
   $output = shell_exec('echo "$(</proc/uptime awk \'{print $1}\')"');
   $time_alive = seconds_to_time(intval($output));
