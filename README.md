@@ -12,9 +12,6 @@ It'll show you current information about:
  * CPU Load
  * Memory allocation
  * Available storage
- 
-[Plus is looks pretty.](#screenshot)
-
 
 <a href="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png">
   <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
@@ -95,7 +92,3 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 License
 =======
 <p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.md"> MIT License.</a>
-
-<a id="screenshot"></a>Screenshot
-==========
-<img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
