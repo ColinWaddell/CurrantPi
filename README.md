@@ -13,9 +13,9 @@ It'll show you current information about:
  * Memory allocation
  * Available storage
 
-[Check out the Live Demo &#8594;](http://ukube.colinwaddell.com/rpiinfo/) *Caveat:* Totally not running on a Raspberry Pi*  
+[Check out the Live Demo](http://ukube.colinwaddell.com/rpiinfo/) (Totally not running on a Raspberry Pi)
 
-<a href="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png">
+<a href="http://ukube.colinwaddell.com/rpiinfo/">
   <img src="https://raw.githubusercontent.com/ColinWaddell/RPi-Board-Info/screenshots/img/screenshot.png" width="380"/>
 </a>
  
