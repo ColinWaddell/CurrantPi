@@ -70,7 +70,7 @@
         </div>
       </td>
       <td>
-        <p class="text-right">Used</p>
+        <p>Used</p>
       </td>
       <td class="membar-key">
         <span class="membar-key-buffers">
@@ -78,7 +78,7 @@
         </div>
       </td>
       <td>
-        <p class="text-right">Buffers</p>
+        <p>Buffers</p>
       </td>
     </tr>
 
@@ -89,7 +89,7 @@
         </div>
       </td>
       <td>
-        <p class="text-right">Cache</p>
+        <p>Cache</p>
       </td>
       <td class="membar-key">
         <span class="membar-key-free">
@@ -97,7 +97,7 @@
         </div>
       </td>
       <td>
-        <p class="text-right">Free</p>
+        <p>Free</p>
       </td>
     </tr> 
   </tbody>
