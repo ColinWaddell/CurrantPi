@@ -52,7 +52,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     sudo service lighttpd force-reload
     ```
 
-2. Next create a backup of your webservers current content 
+2. Next create a backup of your webserver's current content 
 
     ```
     sudo mv /var/www/html /var/www/html_backup
