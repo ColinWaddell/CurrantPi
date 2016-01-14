@@ -17,11 +17,7 @@
 /* font-awesome */
 @font-face {
   font-family: 'fontello';
-  src: url('./fonts/fontello.eot?83590039');
-  src: url('./fonts/fontello.eot?83590039#iefix') format('embedded-opentype'),
-       url('./fonts/fontello.woff?83590039') format('woff'),
-       url('./fonts/fontello.ttf?83590039') format('truetype'),
-       url('./fonts/fontello.svg?83590039#fontello') format('svg');
+  src: url('./fonts/fontello.woff?83590039') format('woff'),
   font-weight: normal;
   font-style: normal;
 }
