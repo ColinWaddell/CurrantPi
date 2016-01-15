@@ -85,19 +85,21 @@ h6 {
 
 .membar-key > span.membar-key-buffers,
 .progress-bar-buffers{
-  background: #A8C545;
+  background: #FFE082;
 }
 .membar-key > span.membar-key-cache,
 .progress-bar-cache{
-  background: #0092B2;
+  background: #7986CB;
+  color: white;
 }
 .membar-key > span.membar-key-free,
 .progress-bar-free{
-  background: #aaa;
+  background: #4DB6AC;
 }
 .membar-key > span.membar-key-used,
 .progress-bar-used{
-  background: #A99771;
+  background: #EF5350;
+  color: white;
 }
 .progress-bar-grey{
   color: #000;
