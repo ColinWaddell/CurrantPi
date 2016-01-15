@@ -181,4 +181,7 @@ footer > p{
   } 
 }
 
-/*
+/* Fix row on memory */
+.row-memory {
+  margin-right: 0px;
+}
