@@ -34,7 +34,7 @@ There's a couple of routes to installing this. Follow the one which fits you bes
 2. Cross Fingers. 
 3. Point your browser at your webserver.
 
-####Method \#2: I've already got a webserver and I can easily drop some files in its working directory
+####Method \#2: I've already got a webserver and I can easily drop some files into its working directory
 1. [Download the latest release](https://github.com/ColinWaddell/CurrantPi/archive/master.zip)
 2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
 3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
