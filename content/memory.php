@@ -20,7 +20,7 @@
   <tbody>
     <tr>
       <td colspan="4">
-        <div class="row">
+        <div class="row row-memory">
           <div class="col-xs-9">
             <div class="progress">
               <div class="progress-bar progress-bar-used" 
