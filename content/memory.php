@@ -20,7 +20,7 @@
   <tbody>
     <tr>
       <td colspan="4">
-        <div class="row row-memory">
+        <div class="row">
           <div class="col-xs-9">
             <div class="progress">
               <div class="progress-bar progress-bar-used" 
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="col-xs-3">
-            <p class="text-right"><?php echo $mem_total;?>MB&nbsp;</p>
+            <p class="text-right"><?php echo $mem_total;?>MB</p>
           </div>
         </div>
       </td>

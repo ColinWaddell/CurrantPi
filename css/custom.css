@@ -181,7 +181,8 @@ footer > p{
   } 
 }
 
-/* Fix row on memory */
-.row-memory {
-  margin-right: 0px;
+/* Give a little extra room for Total Ram */
+.row-memory div:nth-child(2) {
+  padding-left:0;
 }
+
