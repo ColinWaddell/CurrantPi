@@ -14,6 +14,10 @@ h6 {
   font-family: 'Varela Round', sans-serif;
 }
 
+a, a:hover{
+  color: #5C967D;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -32,6 +36,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
+  color: #BB7373;
 }
 
 .title-text h1{
@@ -83,25 +88,25 @@ h6 {
   color: #FFF;
 }
 
+.membar-key > span.membar-key-used,
+.progress-bar-used{
+  background: #BB7373;
+}
 .membar-key > span.membar-key-buffers,
 .progress-bar-buffers{
-  background: #A8C545;
+  background: #E4D37C;
 }
 .membar-key > span.membar-key-cache,
 .progress-bar-cache{
-  background: #0092B2;
+  background: #8db4a3;
 }
 .membar-key > span.membar-key-free,
 .progress-bar-free{
-  background: #aaa;
+  background: #c2d2bd;
 }
-.membar-key > span.membar-key-used,
-.progress-bar-used{
-  background: #A99771;
-}
-.progress-bar-grey{
+.progress-bar-custom{
   color: #000;
-  background-color: #aaa;
+  background-color: #BB7373;
   padding: 0 0 0 4px;
 }
 
@@ -127,6 +132,11 @@ td.membar-key{
 
 p{
   margin: 2px 0 2px;
+}
+
+/* font awesome customisation */
+i.demo-icon{
+  color: #495D54;
 }
 
 /* CSS for storage table */
