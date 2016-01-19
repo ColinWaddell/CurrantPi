@@ -14,7 +14,7 @@
       <th><p>Filesystem</p></th>
       <th><p class='text-center'>Size</p></th>
       <th><p class='text-center'>Available</p></th>
-      <th><p id='storage_pct_bars' class='text-center'>% Used</p></th>
+      <th><p id='storage_pct_bars' class='text-center'>%&nbsp;Used</p></th>
       <th><p class='text-right'>Mounted</p></th>
     </tr>
   </thead>
