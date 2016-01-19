@@ -10,10 +10,10 @@
   $cache = intval(shell_exec("free | awk '/Mem/ {print $7}'"));
   $total_act = $used_act + $free + $buffers + $cache;
 
-  $free_p = (100*($free/$total_act));
-  $buffers_p = (100*($buffers/$total_act));
-  $cache_p = (100*($cache/$total_act));
-  $used_act_p = (100*($used_act/$total_act));
+  $free_p = 8;//(100*($free/$total_act));
+  $buffers_p = 3;//(100*($buffers/$total_act));
+  $cache_p = 27;//(100*($cache/$total_act));
+  $used_act_p = 62;//(100*($used_act/$total_act));
 ?>
 
 <table class="table table-striped table-hover">
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="col-xs-3">
-            <p class="text-right"><?php echo $mem_total;?>MB</p>
+            <p class="text-right"><?php echo pretty_memory($mem_total);?></p>
           </div>
         </div>
       </td>

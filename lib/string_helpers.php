@@ -5,6 +5,21 @@
       return $dtF->diff($dtT)->format('%ad %hh %im');
   }
 
+  function pretty_memory($total) {
+    $total= intval($total);
+    $ret = "unknown";
+
+    if ($total > 999){
+      $total = round($total/1024, 2);
+      $ret = "{$total}GB";
+    }
+    else{
+      $ret = "{$total}MB";
+    }
+
+    return $ret;
+  }
+
   function pretty_baud($baud) {
     $baud = intval($baud);
     $ret = "unknown";
