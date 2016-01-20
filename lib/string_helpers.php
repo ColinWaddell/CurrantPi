@@ -24,10 +24,10 @@
 
     if ($total > 999){
       $total = round($total/1024, 2);
-      $ret = "{$total}GB";
+      $ret = "{$total} GB";
     }
     else{
-      $ret = "{$total}MB";
+      $ret = "{$total} MB";
     }
 
     return $ret;
