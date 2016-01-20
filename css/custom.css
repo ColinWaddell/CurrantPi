@@ -36,7 +36,7 @@ a, a:hover{
   margin-top: 0;
   margin-bottom: 0;
   line-height: 3rem;
-  color: #bb5e5e;
+  color: #DA5D5D;
 }
 
 .title-text h1{
@@ -90,7 +90,7 @@ a, a:hover{
 
 .membar-key > span.membar-key-used,
 .progress-bar-used{
-  background: #BB7373;
+  background: #DA5D5D;
 }
 .membar-key > span.membar-key-buffers,
 .progress-bar-buffers{
@@ -106,7 +106,7 @@ a, a:hover{
 }
 .progress-bar-custom{
   color: #000;
-  background-color: #BB7373;
+  background-color: #8db4a3;
   padding: 0 0 0 4px;
 }
 
