@@ -1,6 +1,6 @@
 Currant Pi
 =========
-Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#installation)</sup></sup>.
+Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#installation)</sup></sup>
 
 Currant Pi will show you current information about your Raspberry Pi's:
 
