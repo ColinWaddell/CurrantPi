@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# This script reads the total amount of bytes transfered
+# and received through the interface defined by INTERFACE
+# below. 
+# 
+# The script then pauses for a second before reading the
+# total Tx and Rx bytes again.
+# 
+# Subtracting these two values then gives the current
+# Tx and Rx bytes per second. 
+
 INTERFACE=eth0
 
 P1_rx=`cat /sys/class/net/${INTERFACE}/statistics/rx_bytes`
