@@ -1,6 +1,14 @@
  <h4><i class="demo-icon icon-chart-area"></i> CPU Load Average</h4>
 
  <?php
+
+  /*
+   * The command uptime returns a bunch of information about how long
+   * the system has been running and the load on the processor. Read
+   * more about this information here
+   *   - http://www.computerhope.com/unix/uptime.htm
+   */
+
   $output = shell_exec('uptime');
   $loadavg = explode(' ', substr($output, strpos($output,'load average:')+14));
  ?>

@@ -1,3 +1,9 @@
+<?php
+  /*
+   * Title area. Check out custom.css for how this is tweaked. 
+   */
+?>
+
 <div class="col-sm-8 title-text">
   <h1>Currant Pi</h1>
   <h3>Raspberry Pi Status</h3>

@@ -1,6 +1,11 @@
 <h4><i class="demo-icon icon-server"></i> Hardware</h4>
 
 <?php
+  /*
+   * Using the onboard temperature sensor and the command 'uptime'
+   * to pull in information about how hot the Raspberry Pi is and
+   * how long it's been switched on for.
+   */
   $output = shell_exec('cat /sys/class/thermal/thermal_zone0/temp');
   $temp = round(($output)/1000, 1);
 

@@ -25,9 +25,8 @@
   <body>
 
     <div class="container">
-
-      <div class="header clearfix title-area">
         <!-- Banner -->
+      <div class="header clearfix title-area">
         <?php include ('content/banner.php'); ?>
       </div>
 
