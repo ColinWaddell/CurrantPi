@@ -77,11 +77,11 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
   
 Contributing
 ============
-You can contribute to this project [pushing to your fork and submitting a pull request](https://guides.github.com/activities/contributing-to-open-source/).
+You can contribute to this project by [pushing to your fork and submitting a pull request](https://guides.github.com/activities/contributing-to-open-source/).
 
-I like to try and comment on pull requests as soon as possible, but sometimes real-life gets in the way. I also may suggest some changes or improvements or alternatives. So my apologies in advance if I don't automatically accept your submission.
+I like to try and comment on pull requests as soon as possible, but sometimes real-life gets in the way. I also may suggest some changes or improvements or alternatives. My apologies in advance if I don't automatically accept your submission.
 
-When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and (with any luck) once it's running tinker with the code. They shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep code simple (but not stupid), clean and readable as possible. 
+When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and have it 'just work'. With any luck I'd like this to be as simple as possible for anyone to tinker with. People new to programming shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep the code simple (but not stupid), clean and readable as possible. 
 
 **Code should be simple enough that any eager beginner can follow it.**
 
