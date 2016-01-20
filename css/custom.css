@@ -118,6 +118,10 @@ i.demo-icon{
   margin-bottom: 30px;
 }
 
+.widget-less-padding{
+  margin-bottom: 10px;
+}
+
 /*  Status Bars:
  * 
  *    Customisations used for the memory-bar and the

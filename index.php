@@ -54,7 +54,7 @@
 
       <div class="row">
         <!-- Storage -->
-        <div class="col-lg-12">
+        <div class="col-lg-12 widget-less-padding">
           <?php include ('content/storage.php'); ?>
         </div>
       </div>
