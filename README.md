@@ -1,6 +1,6 @@
 Currant Pi
 =========
-Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#install)</sup></sup>.
+Keep an eye on your [Raspberry Pi](https://www.raspberrypi.org/) with zero configuration <sup><sup>[\[if you've already got a web-server running\]](#installation)</sup></sup>.
 
 Currant Pi will show you current information about your Raspberry Pi's:
 
@@ -19,7 +19,7 @@ Currant Pi will show you current information about your Raspberry Pi's:
  
 <hr />
 
-<a id="install"></a>Installation
+Installation
 ================================
 Currant Pi is designed to work straight out the box. To install you need to download the latest release either as a zip file, or by cloning the repo and then making it visible to your webserver.
 
