@@ -81,7 +81,7 @@ You can contribute to this project by [pushing to your fork and submitting a pul
 
 I like to try and comment on pull requests as soon as possible, but sometimes real-life gets in the way. I also may suggest some changes or improvements or alternatives. My apologies in advance if I don't automatically accept your submission.
 
-When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and have it 'just work'. Second to this I'd like the code to feel accessible enough that anyone interested can play with it. People new to programming shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep the code simple *but not stupid*, clean and as readable possible. 
+When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and have it 'just work'. Second to this I'd like the code to feel accessible enough that anyone interested can play with it. People new to programming shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep the code simple *but not stupid*, clean and as readable as possible. 
 
 **Code should be simple enough that any eager beginner can follow it.**
 
