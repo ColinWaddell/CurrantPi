@@ -1,6 +1,19 @@
 <h4><i class="demo-icon icon-sliders"></i> Memory</h4>
 
 <?php
+  /*
+   * Check out this page to find out how to understand 
+   * the output of the free command:
+   *   - http://www.linuxnix.com/find-ram-size-in-linuxunix/
+   * 
+   * The code below pulls the relevant parts out of 'free'
+   * and figures out the percentage used of each.
+   *
+   * $total_act is a little less than $mem_total as there's
+   * some used up by the bootloader that's not available
+   * to the system.
+   */
+
   $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $3}'"));
   $mem_total = intval(shell_exec("free -m | awk '/Mem/ {print $2}'"));
 
@@ -10,10 +23,10 @@
   $cache = intval(shell_exec("free | awk '/Mem/ {print $7}'"));
   $total_act = $used_act + $free + $buffers + $cache;
 
-  $free_p = (100*($free/$total_act));
-  $buffers_p = (100*($buffers/$total_act));
-  $cache_p = (100*($cache/$total_act));
-  $used_act_p = (100*($used_act/$total_act));
+  $free_p = 100*($free/$total_act);
+  $buffers_p = 100*($buffers/$total_act);
+  $cache_p = 100*($cache/$total_act);
+  $used_act_p = 100*($used_act/$total_act);
 ?>
 
 <table class="table table-striped table-hover">
