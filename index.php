@@ -32,21 +32,21 @@
 
       <div class="row">
         <!-- Hardware -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 widget-padding">
           <?php include ('content/hardware.php'); ?>
         </div>
         <!-- Network -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 widget-padding">
           <?php include ('content/network.php'); ?>
         </div>
       </div>
 
       <div class="row">
         <!-- Load Average -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 widget-padding">
           <?php include ('content/load_average.php'); ?>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 widget-padding">
           <!-- Memory -->
           <?php include ('content/memory.php'); ?>
         </div>

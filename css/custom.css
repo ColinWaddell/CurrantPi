@@ -109,6 +109,15 @@ i.demo-icon{
   text-align: center;
 }
 
+/*  Widgets:
+ * 
+ *    These are helpers for the individual
+ *    boxes of info.
+ */
+.widget-padding{
+  margin-bottom: 20px;
+}
+
 /*  Status Bars:
  * 
  *    Customisations used for the memory-bar and the
