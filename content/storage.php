@@ -19,7 +19,6 @@
     </tr>
   </thead>
   <tbody>
-  <tr>
      <?php
       foreach($table_rows as $row) {
         echo "<tr>";
@@ -69,6 +68,5 @@
         echo "</tr>";
       }
     ?>           
-  </tr>
  </tbody>
 </table>

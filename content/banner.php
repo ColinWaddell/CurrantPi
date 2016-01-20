@@ -3,5 +3,5 @@
   <h3>Raspberry Pi Status</h3>
 </div>
 <div class="col-sm-4 title-logo">
-  <img src="img/Raspberry_Pi_Logo.svg" class="title_logo">
+  <img src="img/Raspberry_Pi_Logo.svg" alt="Currant Pi Logo" class="title_logo">
 </div>

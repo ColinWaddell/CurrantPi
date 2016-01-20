@@ -67,7 +67,7 @@
       <td class="membar-key">
         <span class="membar-key-used">
           <?php echo intval($used_act_p);?>%
-        </div>
+        </span>
       </td>
       <td>
         <p>Used</p>
@@ -75,7 +75,7 @@
       <td class="membar-key">
         <span class="membar-key-buffers">
           <?php echo intval($buffers_p);?>%
-        </div>
+        </span>
       </td>
       <td>
         <p>Buffers</p>
@@ -86,7 +86,7 @@
       <td class="membar-key">
         <span class="membar-key-cache">
           <?php echo intval($cache_p);?>%
-        </div>
+        </span>
       </td>
       <td>
         <p>Cache</p>
@@ -94,7 +94,7 @@
       <td class="membar-key">
         <span class="membar-key-free">
           <?php echo intval($free_p);?>%
-        </div>
+        </span>
       </td>
       <td>
         <p>Free</p>
