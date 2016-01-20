@@ -54,6 +54,10 @@ a, a:hover{
  * 
  *    Undoing bootstraps bold table headers.
  */
+.table{
+  margin-bottom: 0;
+}
+
 th{
   font-weight: 400;
 }
@@ -225,7 +229,7 @@ td.membar-key{
  *    the rest of the page.
  */
 .footer {
-  padding-top: 1.5rem;
+  padding-top: 5px;
   color: #777;
   border-top: .05rem solid #e5e5e5;
 }
