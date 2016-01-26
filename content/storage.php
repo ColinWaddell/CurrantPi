@@ -1,21 +1,5 @@
 <h4><i class="demo-icon icon-database"></i> Storage</h4>
 
-<?php
-  /*
-   * The commands df -H returns a bunch of useful information
-   * about how your connected storage is utilised. The following
-   * loops through the output of this data and does different
-   * things depending on which column of the table it's on.
-   */
-
-
-  $output = shell_exec('df -H');
-  $table_rows = preg_split ('/$\R?^/m', $output);
-  $table_header = explode(' ', $table_rows[0]);
-  $table_rows = array_splice($table_rows, 1);
-  $table_header = array_splice($table_header, 0, count($table_header)-1);
-?>
-
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -28,22 +12,20 @@
   </thead>
   <tbody>
      <?php
-      foreach($table_rows as $row) {
-        echo "<tr>";
-        $items = explode(' ', $row);
-        $col_count = 0;
-        foreach($items as $item){
-          if ($item!==""){
-            switch ($col_count) {
+      foreach ($server_info['storage'] as $row) {
+          echo '<tr>';
+          $col_count = 0;
+          foreach ($row as $item) {
+              switch ($col_count) {
               // First Column - The file system. Should be left aligned. 
               case 0:
                 echo "<td><p>$item</p></td>";
                 break;
-                
+
               // Hide this column 
               case 2:
                 break;
-                
+
               // Column 4 is where we use the % bar to show storage used
               case 4:
                 $percentage = intval($item);
@@ -64,20 +46,19 @@
                   </td>
                 <?php
                 break;
-                
+
               // Column 5 - Right align the mount point
               case 5:
                 echo "<td><p class='text-right'>$item</p></td>";
                 break;
-                
+
               // Everything else, make sure it;s center aligned.
               default:
                   echo "<td><p class='text-center'>$item</p></td>";
             }
-            $col_count++;
+              ++$col_count;
           }
-        }
-        echo "</tr>";
+          echo '</tr>';
       }
     ?>           
  </tbody>
