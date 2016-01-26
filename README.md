@@ -74,6 +74,14 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 > Thanks to [_FranklY](https://www.reddit.com/r/raspberry_pi/comments/3zs89i/created_a_webinterface_to_keep_on_eye_on_how_my/cype3bd) and [rafspeik](https://github.com/rafspeik) for helping with these instructions.
 
 <hr />
+
+API
+===
+You can get all the info in the form of JSON, so that you can use it in any external service or your own web application by accessing the file api.php instead of index.php
+
+For example:
+
+[http://raspberrypi/api.php](http://raspberrypi/api.php)
   
 Contributing
 ============
