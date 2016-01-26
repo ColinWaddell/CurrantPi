@@ -13,7 +13,7 @@
    /*
     * Libraries and helper function
    */
-  include 'lib/string_helpers.php';
-  include 'readings/server_info.php';
+  include('lib/string_helpers.php');
+  include('lib/server_info.php');
 
   echo json_encode(['server_info' => $server_info]);
