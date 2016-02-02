@@ -1,3 +1,12 @@
+<?php
+namespace CurrantPi;
+
+include 'content/storage/StorageData.php';
+$storage = new StorageData();
+$storage_data = $storage->getData();
+
+?>
+
 <h4><i class="demo-icon icon-database"></i> Storage</h4>
 
 <table class="table table-striped table-hover">
@@ -12,7 +21,7 @@
   </thead>
   <tbody>
      <?php
-      foreach ($server_info['storage'] as $row) {
+      foreach ($storage_data->storage as $row) {
           echo '<tr>';
           $col_count = 0;
           foreach ($row as $item) {

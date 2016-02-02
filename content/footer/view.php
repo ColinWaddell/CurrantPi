@@ -1,12 +1,18 @@
 <?php
-  /*
-   * Footer area. Using a bunch of inline echos to find out 
-   * information about this system.
-   */
+namespace CurrantPi;
+
+/*
+ * Footer area. Using a bunch of inline echos to find out 
+ * information about this system.
+ */
+include 'content/footer/FooterData.php';
+$footer = new FooterData();
+$footer_data = $footer->getData();
+
 ?>
 
-<p><?php echo $server_info['webserver']; ?></p>
-<p><?php echo $server_info['cpu']; ?></p>
+<p><?php echo $footer_data->webserver; ?></p>
+<p><?php echo $footer_data->cpu; ?></p>
 
 <p>
   <a href="https://github.com/ColinWaddell/CurrantPi"><i class="demo-icon icon-github"></i></a>
