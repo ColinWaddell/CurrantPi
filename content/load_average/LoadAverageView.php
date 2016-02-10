@@ -2,7 +2,7 @@
 namespace CurrantPi;
 
 include 'content/load_average/LoadAverageData.php';
-$load = new LoadData();
+$load = new LoadAverageData();
 $load_data = $load->getData();
 
 ?>
