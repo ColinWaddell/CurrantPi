@@ -29,8 +29,8 @@ class NetworkData implements ServerData
         // data object
         $data = new \stdClass();
 
-        $data->down = pretty_baud($rates[0]);
-        $data->up = pretty_baud($rates[1]);
+        $data->down = StringHelpers::prettyBaud($rates[0]);
+        $data->up = StringHelpers::prettyBaud($rates[1]);
 
         return $data;
     }

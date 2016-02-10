@@ -13,15 +13,15 @@ $load_data = $load->getData();
   <tbody>
   <tr>
     <td><p>1 min:</p></td>
-    <td><p class="text-right"><?php echo pretty_load_average($load_data->one_min)?></p></td>
+    <td><p class="text-right"><?php echo $load_data->one_min ?></p></td>
   </tr>
   <tr>
     <td><p>5 min:</p></td>
-    <td><p class="text-right"><?php echo pretty_load_average($load_data->five_mins)?></p></td>
+    <td><p class="text-right"><?php echo $load_data->five_mins ?></p></td>
   </tr>
   <tr>
     <td><p>15 min:</p></td>
-    <td><p class="text-right"><?php echo pretty_load_average($load_data->fifteen_mins)?></p></td>
+    <td><p class="text-right"><?php echo $load_data->fifteen_mins ?></p></td>
   </tr>
   </tbody>
 </table>

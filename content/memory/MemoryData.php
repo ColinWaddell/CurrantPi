@@ -43,7 +43,7 @@ class MemoryData implements ServerData
         // data object
         $data = new \stdClass();
 
-        $data->total = pretty_memory($mem_total);
+        $data->total = StringHelpers::prettyMemory($mem_total);
         $data->used_percentage = strval(round($used_act_p, 2));
         $data->buffers_percentage = strval(round($buffers_p, 2));
         $data->cache_percentage = strval(round($cache_p, 2));

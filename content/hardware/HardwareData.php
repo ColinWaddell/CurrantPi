@@ -23,7 +23,7 @@ class HardwareData implements ServerData
         $temp = round(($output) / 1000, 1);
 
         $output = shell_exec('echo "$(</proc/uptime awk \'{print $1}\')"');
-        $time_alive = seconds_to_time(intval($output));
+        $time_alive = StringHelpers::secondsToTime(intval($output));
 
         // data object
         $data = new \stdClass();

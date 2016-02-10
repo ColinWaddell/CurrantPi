@@ -26,9 +26,9 @@ class LoadData implements ServerData
         // data object
         $data = new \stdClass();
 
-        $data->one_min = $loadavg[0];
-        $data->five_mins = $loadavg[1];
-        $data->fifteen_mins = $loadavg[2];
+        $data->one_min = StringHelpers::prettyLoadAverage($loadavg[0]);
+        $data->five_mins = StringHelpers::prettyLoadAverage($loadavg[1]);
+        $data->fifteen_mins = StringHelpers::prettyLoadAverage($loadavg[2]);
 
         return $data;
     }
