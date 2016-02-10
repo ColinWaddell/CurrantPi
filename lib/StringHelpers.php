@@ -1,8 +1,8 @@
 <?php
 
 /*
- * The following scripts are used to return a nicer version
- * of a value to use on the page.
+ * The following functions are used to return a nicer
+ * version of a value to be used on the page.
  */
 
 namespace CurrantPi;
