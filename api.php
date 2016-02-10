@@ -12,9 +12,9 @@ namespace CurrantPi;
  * @link       https://github.com/ColinWaddell/CurrantPi
  */
 
- /*
-  * Libraries and helper function
-  */
+/*
+ * Libraries and helper function
+ */
 include('lib/StringHelpers.php');
 include('lib/ServerData.php');
 
@@ -40,7 +40,7 @@ foreach ($sources as $dir => $class) {
   // Load a module as defined in $sources
   include 'content/'.$dir.'/'.$class.'.php';
   $class_name = 'CurrantPi\\'.$class;
-  
+
   // Instantiate a version of the
   // module, grab its data then
   // append it to $server_info
