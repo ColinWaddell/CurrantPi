@@ -9,4 +9,11 @@ $app->get('/', function () use ($app)
 })->name('index')->via('GET','POST');
 
 
+// Public API Routes
+$app->get('/api/info/all', function () use ($app)
+{
+    $apiController = new \Currant\Controller\ApiController($app);
+    $apiController->getAllInformation();
+
+})->name('index')->via('GET','POST');
 
