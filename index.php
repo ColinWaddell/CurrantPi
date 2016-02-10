@@ -13,7 +13,7 @@
    /*
     * Libraries and helper function
    */
-  include('lib/string_helpers.php');
+  include('lib/StringHelpers.php');
   include('lib/ServerData.php');
 
 ?>
