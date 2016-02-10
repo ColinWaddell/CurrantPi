@@ -13,7 +13,7 @@ Currant Pi will show you current information about your Raspberry Pi's:
 
 [Check out the Live Demo &rarr;](http://ukube.colinwaddell.com/rpiinfo/) 
 
-<a href="http://ukube.colinwaddell.com/rpiinfo/">
+<a href="http://currantpi.colinwaddell.com/demo">
   <img src="https://raw.githubusercontent.com/ColinWaddell/CurrantPi/screenshots/img/screenshot.png" width="380"/>
 </a>
  
