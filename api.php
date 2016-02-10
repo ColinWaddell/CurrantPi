@@ -24,7 +24,7 @@ include('lib/ServerData.php');
 $sources = [
   'footer'        =>  'FooterData',
   'hardware'      =>  'HardwareData',
-  'load_average'  =>  'LoadData',
+  'load_average'  =>  'LoadAverageData',
   'memory'        =>  'MemoryData',
   'network'       =>  'NetworkData',
   'storage'       =>  'StorageData',
