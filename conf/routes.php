@@ -15,5 +15,5 @@ $app->get('/api/info/all', function () use ($app)
     $apiController = new \Currant\Controller\ApiController($app);
     $apiController->getAllInformation();
 
-})->name('index')->via('GET','POST');
+})->name('api-all')->via('GET','POST');
 
