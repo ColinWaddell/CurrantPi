@@ -22,7 +22,7 @@
 <html lang="en">
   <head>
     <!-- Header -->
-    <?php include('content/header/view.php'); ?>
+    <?php include('content/header/HeaderView.php'); ?>
   </head>
 
   <body>
@@ -30,35 +30,35 @@
     <div class="container">
         <!-- Banner -->
       <div class="header clearfix title-area">
-        <?php include('content/banner/view.php'); ?>
+        <?php include('content/banner/BannerView.php'); ?>
       </div>
 
       <div class="row">
         <!-- Hardware -->
         <div class="col-lg-6 widget-padding">
-            <?php include('content/hardware/view.php'); ?>
+            <?php include('content/hardware/HardwareView.php'); ?>
         </div>
         <!-- Network -->
         <div class="col-lg-6 widget-padding">
-            <?php include('content/network/view.php'); ?>
+            <?php include('content/network/NetworkView.php'); ?>
         </div>
       </div>
 
       <div class="row">
         <!-- Load Average -->
         <div class="col-lg-6 widget-padding">
-            <?php include('content/load_average/view.php'); ?>
+            <?php include('content/load_average/LoadAverageView.php'); ?>
         </div>
         <div class="col-lg-6 widget-padding">
           <!-- Memory -->
-            <?php include('content/memory/view.php'); ?>
+            <?php include('content/memory/MemoryView.php'); ?>
         </div>
       </div>
 
       <div class="row">
         <!-- Storage -->
         <div class="col-lg-12 widget-less-padding">
-            <?php include('content/storage/view.php'); ?>
+            <?php include('content/storage/StorageView.php'); ?>
         </div>
       </div>
 
@@ -66,7 +66,7 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <?php include('content/footer/view.php'); ?>
+        <?php include('content/footer/FooterView.php'); ?>
       </footer>
 
     </div> <!-- /container -->
