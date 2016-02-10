@@ -1,3 +1,5 @@
 # Folders and files to ignore
 vendor/
 composer.lock
+composer.phar
+
