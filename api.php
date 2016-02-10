@@ -15,19 +15,20 @@ namespace CurrantPi;
 /*
  * Libraries and helper function
  */
-include('lib/StringHelpers.php');
 include('lib/ServerData.php');
+include('lib/StringHelpers.php');
 
 /*
  * List of content sources
  */
 $sources = [
-  'footer'        =>  'FooterData',
-  'hardware'      =>  'HardwareData',
-  'load_average'  =>  'LoadAverageData',
-  'memory'        =>  'MemoryData',
-  'network'       =>  'NetworkData',
-  'storage'       =>  'StorageData',
+// Directory Name => Name of Class   
+  'footer'        => 'FooterData',
+  'hardware'      => 'HardwareData',
+  'load_average'  => 'LoadAverageData',
+  'memory'        => 'MemoryData',
+  'network'       => 'NetworkData',
+  'storage'       => 'StorageData',
 ];
 
 /*
