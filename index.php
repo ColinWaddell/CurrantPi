@@ -10,8 +10,8 @@
    * @link       https://github.com/ColinWaddell/CurrantPi
    */
 
-   /*
-    * Libraries and helper function
+  /*
+   * Libraries and helper function
    */
   include('lib/StringHelpers.php');
   include('lib/ServerData.php');
