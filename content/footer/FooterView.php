@@ -11,7 +11,7 @@ $footer_data = $footer->getData();
 
 ?>
 
-<p><?php echo $footer_data->webserver; ?></p>
+<p><?php echo $footer_data->webserver; ?> - <?php echo $footer_data->php_version; ?></p>
 <p><?php echo $footer_data->cpu; ?></p>
 
 <p>
