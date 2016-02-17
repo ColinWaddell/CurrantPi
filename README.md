@@ -11,12 +11,12 @@ Currant Pi will show you current information about your Raspberry Pi's:
  * Memory allocation
  * Available storage
 
-[Check out the Live Demo &rarr;](http://currantpi.colinwaddell.com/demo) 
+[Check out the Live Demo &rarr;](http://currantpi.colinwaddell.com/demo)
 
 <a href="http://currantpi.colinwaddell.com/demo">
   <img src="https://raw.githubusercontent.com/ColinWaddell/CurrantPi/screenshots/img/screenshot.png" width="380"/>
 </a>
- 
+
 <hr />
 
 Installation
@@ -31,7 +31,7 @@ There's a couple of routes to installing this. Follow the one which fits you bes
     ````
     git clone git@github.com:ColinWaddell/CurrantPi.git /var/www/html/currantpi
     ````
-2. Cross Fingers. 
+2. Cross Fingers.
 3. Point your browser at your webserver.
 
 ####Method \#2: I've already got a webserver and I can easily drop some files into its working directory
@@ -52,13 +52,13 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
     sudo service lighttpd force-reload
     ```
 
-2. Next create a backup of your webserver's current content 
+2. Next create a backup of your webserver's current content
 
     ```
     sudo mv /var/www/html /var/www/html_backup
     sudo mkdir /var/www/html
     ```
-    
+
 3. Install Currant.
 
     ```
@@ -82,14 +82,14 @@ You can get all the info in the form of JSON, so that you can use it in any exte
 For example:
 
 [http://raspberrypi/api.php](http://raspberrypi/api.php)
-  
+
 Contributing
 ============
 You can contribute to this project by [pushing to your fork and submitting a pull request](https://guides.github.com/activities/contributing-to-open-source/).
 
 I like to try and comment on pull requests as soon as possible, but sometimes real-life gets in the way. I also may suggest some changes or improvements or alternatives. My apologies in advance if I don't automatically accept your submission.
 
-When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and have it 'just work'. Second to this I'd like the code to feel accessible enough that anyone interested can play with it. People new to programming shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep the code simple *but not stupid*, clean and as readable as possible. 
+When contributing to CurrantPi keep in mind that the target audience wants to unpack the repo and have it 'just work'. Second to this I'd like the code to feel accessible enough that anyone interested can play with it. People new to programming shouldn't have to deal with fancy design patterns and abstractions. I'd like to keep the code simple *but not stupid*, clean and as readable as possible.
 
 **Code should be simple enough that any eager beginner can follow it.**
 
@@ -99,4 +99,4 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 License
 =======
-<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://github.com/ColinWaddell/RPi-Board-Info/blob/master/LICENSE.md"> MIT License.</a>
+<p>&copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://opensource.org/licenses/MIT"> MIT License.</a>
