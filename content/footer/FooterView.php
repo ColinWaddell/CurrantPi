@@ -20,5 +20,5 @@ $footer_data = $footer->getData();
 </p>
 <hr />
 <p>
-  &copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the <a href="LICENSE.txt">MIT License</a>
+  &copy; 2016 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>
 </p>
