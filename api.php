@@ -54,4 +54,5 @@ foreach ($sources as $dir => $class) {
  * Return a json formatted copy
  * of the server information.
  */
+header('Content-Type: application/json;');
 echo json_encode(['server_info' => $server_info]);
