@@ -53,28 +53,45 @@ if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
 
 // non-existing uri's always will load everything
 $request_uri  = explode('/', $request_uri);
-$sourceKey = $request_uri[2];
+$sourceRequest = $request_uri[2];
+
+if(empty($sourceRequest)){
+  $modules = array_keys($sources);
+} else {
+  $modules = explode(',', $sourceRequest);
+}
 
 /*
  * Use $server_info to accumulate
  * information about the server
+ * Always give an error if one of the modules
+ * isn't found for reliance
  */
 $server_info = new \stdClass();
-
+$error = null;
 // Get all the variables or only specific; less loading time
-if($sourceKey === null || !isset($sources[$sourceKey])){
-  foreach ($sources as $dir => $class) {
-    $data = getModule($dir, $class);
-    $server_info->$dir = $data;
+foreach ($modules as $module) {
+  if(!isset($sources[$module])){
+    $error = 'Module \'' . $module . '\' not available';
+    break;
   }
-} else {
-  $data = getModule($sourceKey, $sources[$sourceKey]);
-  $server_info->$sourceKey = $data;
+  $data = getModule($module, $sources[$module]);
+  $server_info->$module = $data;
 }
+
+
 
 /*
  * Return a json formatted copy
  * of the server information.
  */
 header('Content-Type: application/json;');
-echo json_encode(['server_info' => $server_info]);
+if($error){
+  header("HTTP/1.0 400 Error");
+  $response = ['error' => $error];
+} else {
+  $response = ['server_info' => $server_info];
+  header("HTTP/1.0 200 OK");
+}
+
+echo json_encode($response);
