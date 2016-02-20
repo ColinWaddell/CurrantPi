@@ -2,7 +2,7 @@
 
 namespace CurrantPi;
 
-class StorageData implements ServerData
+class StorageData implements CurrantModule
 {
     private $data;
 

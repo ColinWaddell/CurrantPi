@@ -15,7 +15,7 @@ namespace CurrantPi;
 /*
  * Libraries and helper function
  */
-include('lib/ServerData.php');
+include('lib/CurrantModule.php');
 include('lib/StringHelpers.php');
 
 /*

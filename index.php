@@ -14,7 +14,7 @@
    * Libraries and helper function
    */
   include('lib/StringHelpers.php');
-  include('lib/ServerData.php');
+  include('lib/CurrantModule.php');
 
 ?>
 

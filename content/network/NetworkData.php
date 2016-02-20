@@ -2,7 +2,7 @@
 
 namespace CurrantPi;
 
-class NetworkData implements ServerData
+class NetworkData implements CurrantModule
 {
     private $data;
 

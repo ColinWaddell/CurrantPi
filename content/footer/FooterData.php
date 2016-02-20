@@ -1,7 +1,7 @@
 <?php
 namespace CurrantPi;
 
-class FooterData implements ServerData
+class FooterData implements CurrantModule
 {
     private $data;
 

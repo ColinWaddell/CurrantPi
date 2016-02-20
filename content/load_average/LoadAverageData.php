@@ -2,7 +2,7 @@
 
 namespace CurrantPi;
 
-class LoadAverageData implements ServerData
+class LoadAverageData implements CurrantModule
 {
     private $data;
 
