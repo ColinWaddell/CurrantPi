@@ -4,5 +4,5 @@ namespace CurrantPi;
 
 interface ServerData
 {
-  public function getData();
+    public function getData();
 }

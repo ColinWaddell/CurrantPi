@@ -22,49 +22,48 @@ include('lib/StringHelpers.php');
  * List of content sources
  */
 $sources = [
-// Directory Name => Name of Class   
-  'footer'        => 'FooterData',
-  'hardware'      => 'HardwareData',
-  'load_average'  => 'LoadAverageData',
-  'memory'        => 'MemoryData',
-  'network'       => 'NetworkData',
-  'storage'       => 'StorageData',
+    // Directory Name => Name of Class
+    'footer'        => 'FooterData',
+    'hardware'      => 'HardwareData',
+    'load_average'  => 'LoadAverageData',
+    'memory'        => 'MemoryData',
+    'network'       => 'NetworkData',
+    'storage'       => 'StorageData',
 ];
 
-function getModule($dir, $class){
+function getModule($dir, $class)
+{
+    // Load a module as defined in $sources
+    include 'content/'.$dir.'/'.$class.'.php';
+    $class_name = 'CurrantPi\\'.$class;
 
-  // Load a module as defined in $sources
-  include 'content/'.$dir.'/'.$class.'.php';
-  $class_name = 'CurrantPi\\'.$class;
-
-  // Instantiate a version of the
-  // module, grab its data then
-  // append it to $server_info
-  $data_class = new $class_name;
-  return $data_class->getData();
+    // Instantiate a version of the
+    // module, grab its data then
+    // append it to $server_info
+    $data_class = new $class_name;
+    return $data_class->getData();
 }
-
 
 /*
  * Find out the URI which was given
  * in order to access this page.
- * non-existing uri's always will 
+ * non-existing uri's always will
  * load everything
  */
 $request_uri = null;
 if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
-  $request_uri = filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
-} else if (isset($_SERVER["REQUEST_URI"])){
-  $request_uri = filter_var($_SERVER["REQUEST_URI"], FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
+    $request_uri = filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
+} elseif (isset($_SERVER["REQUEST_URI"])) {
+    $request_uri = filter_var($_SERVER["REQUEST_URI"], FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
 }
 
 $request_uri  = explode('/', $request_uri);
 $sourceRequest = $request_uri[2];
 
-if(empty($sourceRequest)){
-  $modules = array_keys($sources);
+if (empty($sourceRequest)) {
+    $modules = array_keys($sources);
 } else {
-  $modules = explode(',', $sourceRequest);
+    $modules = explode(',', $sourceRequest);
 }
 
 /*
@@ -77,12 +76,12 @@ $server_info = new \stdClass();
 $error = null;
 // Get all the variables or only specific; less loading time
 foreach ($modules as $module) {
-  if(!isset($sources[$module])){
-    $error = 'Module \'' . $module . '\' not available';
-    break;
-  }
-  $data = getModule($module, $sources[$module]);
-  $server_info->$module = $data;
+    if (!isset($sources[$module])) {
+        $error = 'Module \'' . $module . '\' not available';
+        break;
+    }
+    $data = getModule($module, $sources[$module]);
+    $server_info->$module = $data;
 }
 
 /*
@@ -90,12 +89,12 @@ foreach ($modules as $module) {
  * of the server information.
  */
 header('Content-Type: application/json;');
-if($error){
-  header("HTTP/1.0 400 Error");
-  $response = ['error' => $error];
+if ($error) {
+    header("HTTP/1.0 400 Error");
+    $response = ['error' => $error];
 } else {
-  $response = ['server_info' => $server_info];
-  header("HTTP/1.0 200 OK");
+    $response = ['server_info' => $server_info];
+    header("HTTP/1.0 200 OK");
 }
 
 echo json_encode($response);
