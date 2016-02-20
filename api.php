@@ -44,6 +44,13 @@ function getModule($dir, $class){
   return $data_class->getData();
 }
 
+
+/*
+ * Find out the URI which was given
+ * in order to access this page.
+ * non-existing uri's always will 
+ * load everything
+ */
 $request_uri = null;
 if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
   $request_uri = filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
@@ -51,7 +58,6 @@ if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
   $request_uri = filter_var($_SERVER["REQUEST_URI"], FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
 }
 
-// non-existing uri's always will load everything
 $request_uri  = explode('/', $request_uri);
 $sourceRequest = $request_uri[2];
 
@@ -78,8 +84,6 @@ foreach ($modules as $module) {
   $data = getModule($module, $sources[$module]);
   $server_info->$module = $data;
 }
-
-
 
 /*
  * Return a json formatted copy

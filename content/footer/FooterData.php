@@ -23,6 +23,7 @@ class FooterData implements ServerData
     // preparing cpu info
     $name_full = trim(preg_replace('/\s\s+/', ' ', shell_exec('cat /proc/cpuinfo | grep name | head -1')));
     $name = explode(': ', $name_full);
+    
     //determine php version
     $php_version = explode('.', phpversion());
 
