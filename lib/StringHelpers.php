@@ -63,11 +63,11 @@ class StringHelpers{
   /*
    * Take in the load_average as returned by the
    * uptime command and return it as a percentage
-   * with the appropriate formating.
+   * with the appropriate formatting.
    */
   public static function prettyLoadAverage($load_average){
     $load_average = substr($load_average, 0, -1);
     $avg_percent = ($load_average) * 100;
-    return "<span class='text-muted'>{$avg_percent}%</span>&nbsp; &nbsp; &nbsp;$load_average";
+    return ['average' => $load_average, 'percent' => $avg_percent];
   }
 }
