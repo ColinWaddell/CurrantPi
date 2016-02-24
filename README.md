@@ -25,7 +25,7 @@ Currant Pi is designed to work straight out the box. To install you need to down
 
 There's a couple of routes to installing this. Follow the one which fits you best.
 
-####Method \#1: I've already for a webserver and I'm comfortable using Git
+####Method \#1: I've already got a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it, i.e.:
 
     ````
