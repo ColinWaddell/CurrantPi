@@ -63,8 +63,8 @@ class MemoryData implements CurrantModule
             ],
             'free' => (object)[
                 'pretty' => strval(round($free_p, 2)),
-                'percentage' => $cache_p,
-                'actual'=> $cache,
+                'percentage' => $free_p,
+                'actual'=> $free,
             ]
         ];
 
