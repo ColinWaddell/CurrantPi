@@ -25,7 +25,7 @@ Currant Pi is designed to work straight out the box. To install you need to down
 
 There's a couple of routes to installing this. Follow the one which fits you best.
 
-####Method \#1: I've already for a webserver and I'm comfortable using Git
+####Method \#1: I've already got a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it, i.e.:
 
     ````
@@ -79,11 +79,11 @@ You can get all the info in the form of JSON, so that you can use it in any exte
 
  * [http://raspberrypi/api.php](http://raspberrypi/api.php)
 
-If you only want data for a specific module then append is to the request:
+If you only want data for a specific module then append it to the request:
 
  * [http://raspberrypi/api.php/memory](http://raspberrypi/api.php/memory)
  * [http://raspberrypi/api.php/memory,load_average](http://raspberrypi/api.php/memory,load_average)
- 
+
 Available modules are:
  * footer
  * hardware
@@ -91,7 +91,7 @@ Available modules are:
  * memory
  * network
  * storage
- 
+
 Contributing
 ============
 You can contribute to this project by [pushing to your fork and submitting a pull request](https://guides.github.com/activities/contributing-to-open-source/).
