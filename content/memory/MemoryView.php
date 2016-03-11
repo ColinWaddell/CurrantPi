@@ -34,7 +34,7 @@ $memory_data = $memory->getData();
               </div>
               <div class="progress-bar progress-bar-cache"
                 role="progressbar"
-                aria-valuenow="<?php echo $memory_data->cache->percentage;?>"
+                aria-valuenow="<?php echo $memory_data->cache->actual;?>"
                 aria-valuemin="0"
                 aria-valuemax="<?php echo $memory_data->total->actual;?>"
                 style="width: <?php echo $memory_data->cache->percentage;?>%">
