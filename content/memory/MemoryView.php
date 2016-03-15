@@ -16,42 +16,42 @@ $memory_data = $memory->getData();
         <div class="row row-memory">
           <div class="col-xs-9">
             <div class="progress">
-              <div class="progress-bar progress-bar-used" 
-                role="progressbar" 
-                aria-valuenow="<?php echo $memory_data->used_percentage;?>" 
-                aria-valuemin="0" 
-                aria-valuemax="<?php echo $memory_data->total;?>" 
-                style="width: <?php echo $memory_data->used_percentage;?>%">
-                <span class="sr-only"><?php echo $memory_data->used_percentage;?>% Used</span>
-              </div>  
-              <div class="progress-bar progress-bar-buffers" 
-                role="progressbar" 
-                aria-valuenow="<?php echo $memory_data->buffers;?>" 
-                aria-valuemin="0" 
-                aria-valuemax="<?php echo $memory_data->total_act;?>" 
-                style="width: <?php echo $memory_data->buffers_p;?>%">
-                <span class="sr-only"><?php echo $memory_data->buffers_percentage;?>% Buffers</span>
+              <div class="progress-bar progress-bar-used"
+                role="progressbar"
+                aria-valuenow="<?php echo $memory_data->used->actual;?>"
+                aria-valuemin="0"
+                aria-valuemax="<?php echo $memory_data->total->actual;?>"
+                style="width: <?php echo $memory_data->used->percentage;?>%">
+                <span class="sr-only"><?php echo $memory_data->used->pretty;?>% Used</span>
               </div>
-              <div class="progress-bar progress-bar-cache" 
-                role="progressbar" 
-                aria-valuenow="<?php echo $memory_data->cache;?>" 
-                aria-valuemin="0" 
-                aria-valuemax="<?php echo $memory_data->total_act;?>" 
-                style="width: <?php echo $memory_data->cache_p;?>%">
-                <span class="sr-only"><?php echo $memory_data->cache_percentage;?>% Cache</span>
-              </div>  
-              <div class="progress-bar progress-bar-free" 
-                role="progressbar" 
-                aria-valuenow="<?php echo $memory_data->free;?>" 
-                aria-valuemin="0" 
-                aria-valuemax="<?php echo $memory_data->total_act;?>" 
-                style="width: <?php echo $memory_data->free_p;?>%">
-                <span class="sr-only"><?php echo $memory_data->free_percentage;?>% Free</span>
-              </div>  
+              <div class="progress-bar progress-bar-buffers"
+                role="progressbar"
+                aria-valuenow="<?php echo $memory_data->buffers->actual;?>"
+                aria-valuemin="0"
+                aria-valuemax="<?php echo $memory_data->total->actual;?>"
+                style="width: <?php echo $memory_data->buffers->percentage;?>%">
+                <span class="sr-only"><?php echo $memory_data->buffers->pretty;?>% Buffers</span>
+              </div>
+              <div class="progress-bar progress-bar-cache"
+                role="progressbar"
+                aria-valuenow="<?php echo $memory_data->cache->actual;?>"
+                aria-valuemin="0"
+                aria-valuemax="<?php echo $memory_data->total->actual;?>"
+                style="width: <?php echo $memory_data->cache->percentage;?>%">
+                <span class="sr-only"><?php echo $memory_data->cache->pretty;?>% Cache</span>
+              </div>
+              <div class="progress-bar progress-bar-free"
+                role="progressbar"
+                aria-valuenow="<?php echo $memory_data->free->actual;?>"
+                aria-valuemin="0"
+                aria-valuemax="<?php echo $memory_data->total->actual;?>"
+                style="width: <?php echo $memory_data->free->percentage;?>%">
+                <span class="sr-only"><?php echo $memory_data->free->pretty;?>% Free</span>
+              </div>
             </div>
           </div>
           <div class="col-xs-3">
-            <p class="text-right"><?php echo $memory_data->total;?></p>
+            <p class="text-right"><?php echo $memory_data->total->pretty;?></p>
           </div>
         </div>
       </td>
@@ -59,7 +59,7 @@ $memory_data = $memory->getData();
     <tr>
       <td class="membar-key">
         <span class="membar-key-used">
-            <?php echo intval($memory_data->used_percentage);?>%
+            <?php echo intval($memory_data->used->pretty);?>%
         </span>
       </td>
       <td>
@@ -67,7 +67,7 @@ $memory_data = $memory->getData();
       </td>
       <td class="membar-key">
         <span class="membar-key-buffers">
-            <?php echo intval($memory_data->buffers_percentage);?>%
+            <?php echo intval($memory_data->buffers->pretty);?>%
         </span>
       </td>
       <td>
@@ -78,7 +78,7 @@ $memory_data = $memory->getData();
     <tr>
       <td class="membar-key">
         <span class="membar-key-cache">
-            <?php echo intval($memory_data->cache_percentage);?>%
+            <?php echo intval($memory_data->cache->pretty);?>%
         </span>
       </td>
       <td>
@@ -86,12 +86,12 @@ $memory_data = $memory->getData();
       </td>
       <td class="membar-key">
         <span class="membar-key-free">
-            <?php echo intval($memory_data->free_percentage);?>%
+            <?php echo intval($memory_data->free->pretty);?>%
         </span>
       </td>
       <td>
         <p>Free</p>
       </td>
-    </tr> 
+    </tr>
   </tbody>
 </table>

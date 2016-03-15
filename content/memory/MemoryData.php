@@ -41,23 +41,32 @@ class MemoryData implements CurrantModule
         $used_act_p = 100 * ($used_act / $total_act);
 
         // data object
-        $data = new \stdClass();
-
-        $data->total = StringHelpers::prettyMemory($mem_total);
-        $data->used_percentage = strval(round($used_act_p, 2));
-        $data->buffers_percentage = strval(round($buffers_p, 2));
-        $data->cache_percentage = strval(round($cache_p, 2));
-        $data->free_percentage = strval(round($free_p, 2));
-
-        $data->buffers = $buffers;
-        $data->total_act = $total_act;
-        $data->buffers_p = $buffers_p;
-
-        $data->cache = $cache;
-        $data->cache_p = $cache_p;
-
-        $data->free = $free;
-        $data->free_p = $free_p;
+        $data = (object) [
+            'total' => (object)[
+                'pretty' => StringHelpers::prettyMemory($mem_total),
+                'actual'=> $total_act,
+            ],
+            'used' => (object)[
+                'pretty' => strval(round($used_act_p, 2)),
+                'percentage' => $used_act_p,
+                'actual'=> $used_act,
+            ],
+            'buffers' => (object)[
+                'pretty' => strval(round($buffers_p, 2)),
+                'percentage' => $buffers_p,
+                'actual'=> $buffers,
+            ],
+            'cache' => (object)[
+                'pretty' => strval(round($cache_p, 2)),
+                'percentage' => $cache_p,
+                'actual'=> $cache,
+            ],
+            'free' => (object)[
+                'pretty' => strval(round($free_p, 2)),
+                'percentage' => $free_p,
+                'actual'=> $free,
+            ]
+        ];
 
         return $data;
     }
