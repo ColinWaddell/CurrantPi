@@ -60,7 +60,7 @@ if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
 $request_uri  = explode('?', $request_uri);
 $sourceRequest = end($request_uri);
 
-if (empty($sourceRequest) || count($request_uri)==1) {
+if (empty($sourceRequest) || count($request_uri)<=1) {
     /*
      * No specific requests for the
      * api so show everything.
