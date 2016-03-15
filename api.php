@@ -57,10 +57,14 @@ if (filter_has_var(INPUT_SERVER, "REQUEST_URI")) {
     $request_uri = filter_var($_SERVER["REQUEST_URI"], FILTER_UNSAFE_RAW, FILTER_NULL_ON_FAILURE);
 }
 
-$request_uri  = explode('/', $request_uri);
-$sourceRequest = $request_uri[2];
+$request_uri  = explode('?', $request_uri);
+$sourceRequest = end($request_uri);
 
-if (empty($sourceRequest)) {
+if (empty($sourceRequest) || count($request_uri)==1) {
+    /*
+     * No specific requests for the
+     * api so show everything.
+     */
     $modules = array_keys($sources);
 } else {
     $modules = explode(',', $sourceRequest);
