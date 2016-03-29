@@ -125,7 +125,7 @@ rm -rf /tmp/CurrantPi-master
 <h1>
 <a id="api" class="anchor" href="#api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>API</h1>
 
-<p>You can get all the info in the form of JSON, so that you can use it in any external service or your own web application by accessing the file api.php instead of index.php</p>
+<p>You can get all the information about your Raspberry Pi in the form of a JSON request. This allows CurrantPi to be used to supply data to any external service or your own web application by accessing <code>api.php</code> instead of <code>index.php</code></p>
 
 <ul>
 <li><a href="http://raspberrypi/api.php">http://raspberrypi/api.php</a></li>
@@ -134,19 +134,19 @@ rm -rf /tmp/CurrantPi-master
 <p>If you only want data for a specific module then append it to the request:</p>
 
 <ul>
-<li><a href="http://raspberrypi/api.php/memory">http://raspberrypi/api.php/memory</a></li>
-<li><a href="http://raspberrypi/api.php/memory,load_average">http://raspberrypi/api.php/memory,load_average</a></li>
+<li><a href="http://raspberrypi/api.php?memory">http://raspberrypi/api.php?memory</a></li>
+<li><a href="http://raspberrypi?api.php/memory,load_average">http://raspberrypi/api.php?memory,load_average</a></li>
 </ul>
 
 <p>Available modules are:</p>
 
 <ul>
-<li>footer</li>
-<li>hardware</li>
-<li>load_average</li>
-<li>memory</li>
-<li>network</li>
-<li>storage</li>
+<li><code>footer</code></li>
+<li><code>hardware</code></li>
+<li><code>load_average</code></li>
+<li><code>memory</code></li>
+<li><code>network</code></li>
+<li><code>storage</code></li>
 </ul>
 
 <h1>
