@@ -75,22 +75,22 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 
 API
 ===
-You can get all the info in the form of JSON, so that you can use it in any external service or your own web application by accessing the file api.php instead of index.php
+You can get all the information about your Raspberry Pi in the form of a JSON request. This allows CurrantPi to be used to supply data to any external service or your own web application by accessing ```api.php``` instead of ```index.php```
 
  * [http://raspberrypi/api.php](http://raspberrypi/api.php)
 
 If you only want data for a specific module then append it to the request:
 
- * [http://raspberrypi/api.php/memory](http://raspberrypi/api.php/memory)
- * [http://raspberrypi/api.php/memory,load_average](http://raspberrypi/api.php/memory,load_average)
+ * [http://raspberrypi/api.php?memory](http://raspberrypi/api.php?memory)
+ * [http://raspberrypi/api.php?memory,load_average](http://raspberrypi?api.php/memory,load_average)
 
 Available modules are:
- * footer
- * hardware
- * load_average
- * memory
- * network
- * storage
+ * ```footer```
+ * ```hardware```
+ * ```load_average```
+ * ```memory```
+ * ```network```
+ * ```storage```
 
 Contributing
 ============
