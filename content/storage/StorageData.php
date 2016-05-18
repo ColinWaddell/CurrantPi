@@ -20,11 +20,13 @@ class StorageData implements CurrantModule
          * things depending on which column of the table it's on.
          */
 
-        $output = shell_exec('df -H');
+        $output = shell_exec('df -H -x tmpfs -x devtmpfs');
         $table_rows = preg_split('/$\R?^/m', $output);
         $table_header = explode(' ', $table_rows[0]);
         $table_rows = array_splice($table_rows, 1);
         $table_header = array_splice($table_header, 0, count($table_header) - 1);
+
+        sort($table_rows);
 
         // data object
         $data = new \stdClass();
