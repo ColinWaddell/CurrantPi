@@ -21,7 +21,7 @@ Currant Pi will show you current information about your Raspberry Pi's:
 
 Installation
 ================================
-Currant Pi is designed to work straight out the box. To install you need to download the latest release either as a zip file, or by cloning the repo and then making it visible to your webserver.
+Currant Pi is a web interface to keep an eye on your Raspberry Pi and  is designed to work straight out the box. To install you need to download the latest release either as a zip file, or by cloning the repo and then making it visible to your webserver.
 
 There's a couple of routes to installing this. Follow the one which fits you best.
 
