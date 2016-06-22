@@ -1,5 +1,5 @@
 /*  Body and content areas:
- * 
+ *
  *    Padding things out a bit.
  */
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 /*  Headings and Paragraphs:
- * 
+ *
  *    Using a custom font for all the headers.
  */
 h1,
@@ -42,7 +42,7 @@ p{
 }
 
 /*  Links:
- * 
+ *
  *    Keeping it simple with a shade of green slightly
  *    darker than that used in the memory-bar.
  */
@@ -51,7 +51,7 @@ a, a:hover{
 }
 
 /*  Tables:
- * 
+ *
  *    Undoing bootstraps bold table headers.
  */
 .table{
@@ -67,7 +67,7 @@ th{
 }
 
 /*  Font-Awesome:
- * 
+ *
  *    Slightly off grey-green. Probably pointless.
  */
 i.demo-icon{
@@ -75,7 +75,7 @@ i.demo-icon{
 }
 
 /*  Banner area:
- * 
+ *
  *    Customising the subheading font colour to match
  *    the Used bar and the Rasberry Pi Logo.
  */
@@ -108,13 +108,13 @@ i.demo-icon{
   width: 48px;
   margin: 19px 0 10px;
 }
- 
+
 .title-text{
   text-align: center;
 }
 
 /*  Widgets:
- * 
+ *
  *    These are helpers for the individual
  *    boxes of info.
  */
@@ -127,15 +127,15 @@ i.demo-icon{
 }
 
 /*  Status Bars:
- * 
+ *
  *    Customisations used for the memory-bar and the
  *    used-storage bars. Trying to use colours that
  *    it's easy to read black text off of, and that
- *    made sense in context: 
+ *    made sense in context:
  *    i.e. Red for "Used Memory"
  *    Though the green is being used for the Storage
- *    Used so the bottom half of the page isn't 
- *    overpowering.  
+ *    Used so the bottom half of the page isn't
+ *    overpowering.
  */
 .progress{
   margin-bottom: 0;
@@ -196,13 +196,27 @@ td.membar-key{
   width:100%;
 }
 
+/* Storage Area customisations for Hide button */
+.temphide{
+  display: block;
+}
+.temphide + input{
+  display: none; /* hide the checkboxes */
+}
+.temphide + input + div{
+  display:none;
+}
+.temphide + input:checked + div{
+  display:block;
+}
+
 /* force a wider percentage bar on a smaller screen */
 #storage_pct_bars{
-  min-width: 0; 
+  min-width: 0;
 }
 
 /*  Responsive:
- * 
+ *
  *    Portrait tablets and up
  */
 @media screen and (min-width: 48em) {
@@ -223,7 +237,7 @@ td.membar-key{
 
   /* dont force a wider percentage bar on a smaller screen */
   #storage_pct_bars{
-   min-width: 8em; 
+   min-width: 8em;
   }
 
   /* tweak the title area so it lies nicer */
@@ -237,11 +251,11 @@ td.membar-key{
 
   .title-logo > img{
     margin: 28px 0 0 0;
-  } 
+  }
 }
 
 /*  Footer:
- * 
+ *
  *    Adding a slight line to seperate the footer from
  *    the rest of the page.
  */
