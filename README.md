@@ -25,7 +25,7 @@ Currant Pi is a web interface to keep an eye on your Raspberry Pi and  is design
 
 There's a couple of routes to installing this. Follow the one which fits you best.
 
-####Method \#1: I've already got a webserver and I'm comfortable using Git
+#### Method \#1: I've already got a webserver and I'm comfortable using Git
 1. Clone this repo somewhere your webserver can see it, i.e.:
 
     ````
@@ -34,13 +34,13 @@ There's a couple of routes to installing this. Follow the one which fits you bes
 2. Cross Fingers.
 3. Point your browser at your webserver.
 
-####Method \#2: I've already got a webserver and I can easily drop some files into its working directory
+#### Method \#2: I've already got a webserver and I can easily drop some files into its working directory
 1. [Download the latest release](https://github.com/ColinWaddell/CurrantPi/archive/master.zip)
 2. Unzip the repository and move its contents to your web-root, or where ever you'd like this to live (i.e. ```/var/www/html/```)
 3. Visiting Currant by popping the address of your Raspberry Pi into a web-browser (i.e. [http://raspberrypi](http://raspberrypi))
 
 
-####Method \#3: I have no webserver and need full instructions
+#### Method \#3: I have no webserver and need full instructions
 In the following instructions you can skip step ```1``` if you already have a webserver running. Please just swap out ```/var/www/html``` in the instructions with where you'd like Currant to live on your server. You can skip step ```2``` if you've no interest in creating a backup of your current web server's content.
 
 Just copy and paste each section into a terminal on your Rasbberry Pi and hit enter. You may be asked for a password depending on your configuration.
