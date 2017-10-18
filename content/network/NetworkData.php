@@ -5,6 +5,7 @@ namespace CurrantPi;
 class NetworkData implements CurrantModule
 {
     private $data;
+    private $interface = 'wlan0';
 
     public function __construct()
     {
@@ -23,7 +24,7 @@ class NetworkData implements CurrantModule
          * print the network speed in either b/s, Kb/s or Gb/s.
          */
 
-        $output = shell_exec('sh ./lib/transfer_rate.sh');
+        $output = shell_exec('sh ./lib/transfer_rate.sh ' . string($self->interface));
         $rates = explode(' ', $output);
 
         // data object
