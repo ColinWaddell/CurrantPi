@@ -2,6 +2,8 @@
   /*
    * Title area. Check out custom.css for how this is tweaked. 
    */
+
+  $hostname = shell_exec('hostname');
 ?>
 
 <div class="col-sm-8 title-text">
@@ -10,4 +12,5 @@
 </div>
 <div class="col-sm-4 title-logo">
   <img src="img/Raspberry_Pi_Logo.svg" alt="Currant Pi Logo" class="title_logo">
+  <h4><?php echo $hostname; ?></h4>
 </div>

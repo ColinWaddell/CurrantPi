@@ -105,13 +105,19 @@ i.demo-icon{
 }
 
 .title-logo > img{
-  width: 48px;
+  width: 44px;
   margin: 19px 0 10px;
 }
 
 .title-text{
   text-align: center;
 }
+
+.title-logo > h4{
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 16px;
+} 
 
 /*  Widgets:
  *
@@ -246,12 +252,12 @@ td.membar-key{
   }
 
   .title-logo{
-    text-align: right;
+    text-align: center;
   }
 
   .title-logo > img{
-    margin: 28px 0 0 0;
-  }
+    margin: 14px 0 0 0;
+  } 
 }
 
 /*  Footer:
