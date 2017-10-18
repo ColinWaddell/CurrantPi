@@ -77,9 +77,7 @@ Monitoring a wireless connection
 ================================
 If you'd prefer to get network data back for your wireless connection rather than your ethernet, open up ```content/network/NetworkData.php``` and change the property ```$interface``` as follows:
 
-    ```
     public $interface = 'wlan0';
-    ```
 
 API
 ===
