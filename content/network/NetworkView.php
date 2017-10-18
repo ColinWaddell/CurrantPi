@@ -7,7 +7,7 @@ $network_data = $network->getData();
 
 ?>
 
-<h4><i class="demo-icon icon-exchange"></i> Network</h4>
+<h4><i class="demo-icon icon-exchange"></i> Network - <?php echo $network->interface; ?></h4>
 
 <table class="table table-striped table-hover">
   <tbody>
