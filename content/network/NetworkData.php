@@ -7,7 +7,7 @@ class NetworkData implements CurrantModule
     /* If you have a wireless adaptor on your Pi
        that you'd prefer to monitor replace the
        interface below with 'wlan0'             */
-    public $interface = 'eth0'; 
+    public $interface = 'eth0';
 
     private $data;
 

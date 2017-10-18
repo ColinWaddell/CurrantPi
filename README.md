@@ -73,6 +73,14 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 
 <hr />
 
+Monitoring a wireless connection
+================================
+If you'd prefer to get network data back for your wireless connection rather than your ethernet, open up ```content/network/NetworkData.php``` and change the property ```$interface``` as follows:
+
+    ```
+    public $interface = 'wlan0';
+    ```
+
 API
 ===
 You can get all the information about your Raspberry Pi in the form of a JSON request. This allows CurrantPi to be used to supply data to any external service or your own web application by accessing ```api.php``` instead of ```index.php```
