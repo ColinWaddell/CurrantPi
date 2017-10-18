@@ -10,7 +10,7 @@
 # Subtracting these two values then gives the current
 # Tx and Rx bytes per second. 
 
-INTERFACE=eth0
+INTERFACE=wlan0
 
 P1_rx=`cat /sys/class/net/${INTERFACE}/statistics/rx_bytes`
 P1_tx=`cat /sys/class/net/${INTERFACE}/statistics/tx_bytes`
