@@ -101,4 +101,4 @@ if ($error) {
     header("HTTP/1.0 200 OK");
 }
 
-echo json_encode($response);
+echo json_encode($response, JSON_PRETTY_PRINT);
