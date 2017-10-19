@@ -303,8 +303,8 @@ td.membar-key{
  *    the rest of the page.
  */
 .footer {
-  margin-top: 40px;
-  padding-top: 5px;
+  margin-top: 25px;
+  padding-top: 20px;
   color: #777;
   border-top: .05rem solid #e5e5e5;
 }
