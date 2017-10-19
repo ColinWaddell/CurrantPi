@@ -29,6 +29,7 @@ $sources = [
     'memory'        => 'MemoryData',
     'network'       => 'NetworkData',
     'storage'       => 'StorageData',
+    'services'      => 'ServicesData',
 ];
 
 function getModule($dir, $class)
