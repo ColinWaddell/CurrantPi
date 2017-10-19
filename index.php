@@ -62,6 +62,12 @@
         </div>
       </div>
 
+	<div class="row">
+		<div class="col-lg-12">
+			<?php include('content/services/ServicesView.php'); ?>
+		</div>
+	</div>
+
       <hr />
 
       <!-- Footer -->
