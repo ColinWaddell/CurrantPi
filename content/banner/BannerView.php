@@ -11,8 +11,8 @@
   <h3>Raspberry Pi Status</h3>
 </div>
 <div class="col-xs-4 title-logo">
-  <a href="#" class="title-image">
+  <div class="title-image">
     <?php echo $hostname; ?>
-  </a>
+  </div>
 
 </div>

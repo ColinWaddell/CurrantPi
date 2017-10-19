@@ -129,6 +129,8 @@ i.demo-icon{
 
 .title-logo > .title-image{
   text-align: center;
+  font-weight: bold;
+  font-size: 0.8em;
   margin-top: 10px;
   background: url(../img/Raspberry_Pi_Logo.svg);
   background-size: contain;
@@ -137,7 +139,7 @@ i.demo-icon{
   background-position-x: 50%;
   display: block;
   height: 80px;
-  line-height: 12.2em;
+  line-height: 15.5em;
 }
 
 /*  Widgets:
