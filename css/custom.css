@@ -109,7 +109,7 @@ i.demo-icon{
   padding-bottom: 25px;
 }
 
-.title-logo{
+.title-brand{
   text-align: right;
 }
 
@@ -118,13 +118,12 @@ i.demo-icon{
   margin: 19px 0 10px;
 }
 
-/* tweak the title area so it lies nicer */
 .title-text{
   text-align: left;
 }
 
 .title-logo{
-  text-align: right;
+  display: inline-block;
 }
 
 .title-logo > .title-image{

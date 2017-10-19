@@ -10,9 +10,10 @@
   <h1>Currant Pi</h1>
   <h3>Raspberry Pi Status</h3>
 </div>
-<div class="col-xs-4 title-logo">
-  <div class="title-image">
-    <?php echo $hostname; ?>
-  </div>
-
+<div class="col-xs-4 title-brand">
+  <a class="title-logo">
+    <div class="title-image">
+      <?php echo $hostname; ?>
+    </div>
+  </a>
 </div>
