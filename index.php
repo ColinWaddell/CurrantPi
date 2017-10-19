@@ -68,8 +68,6 @@
         </div>
       </div>
 
-      <hr />
-
       <!-- Footer -->
       <footer class="footer">
         <?php include('content/footer/FooterView.php'); ?>
