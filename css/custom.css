@@ -101,7 +101,7 @@ i.demo-icon{
 }
 
 .title-logo{
-  text-align: center;
+  text-align: right;
 }
 
 .title-logo > img{
@@ -252,12 +252,22 @@ td.membar-key{
   }
 
   .title-logo{
-    text-align: center;
+    text-align: right;
   }
 
-  .title-logo > img{
-    margin: 14px 0 0 0;
-  } 
+  .title-logo > .title-image{
+    text-align: center;
+    margin-top: 10px;
+    background: url(../img/Raspberry_Pi_Logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position-x: 50%;
+    display: block;
+    height: 80px;
+    line-height: 12.2em;
+  }
+
 }
 
 /*  Footer:

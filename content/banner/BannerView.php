@@ -11,6 +11,8 @@
   <h3>Raspberry Pi Status</h3>
 </div>
 <div class="col-sm-4 title-logo">
-  <img src="img/Raspberry_Pi_Logo.svg" alt="Currant Pi Logo" class="title_logo">
-  <h4><?php echo $hostname; ?></h4>
+  <a href="#" class="title-image">
+    <?php echo $hostname; ?>
+  </a>
+
 </div>
