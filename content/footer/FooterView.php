@@ -18,6 +18,11 @@ $footer_data = $footer->getData();
   <a href="https://github.com/ColinWaddell/CurrantPi"><i class="demo-icon icon-github"></i></a>
   <a href="https://github.com/ColinWaddell/CurrantPi">Source</a>
 </p>
+<p>
+  <a href="api.php"><i class="demo-icon icon-chart-area"></i></a>
+  <a href="api.php">Raw Data</a>
+</p>
+
 <hr />
 <p>
   &copy; <?php echo date("Y") ?> <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>
