@@ -1,6 +1,6 @@
 <?php namespace CurrantPi; ?>
 
-<h4><i class="demo-icon icon-sliders"></i> Memory</h4>
+<h4><i class="demo-icon icon-sliders"></i> Services</h4>
 
 <?php
 include 'content/services/ServicesData.php';

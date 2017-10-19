@@ -62,7 +62,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row widget-less-padding">
         <div class="col-lg-12">
             <?php include('content/services/ServicesView.php'); ?>
         </div>
