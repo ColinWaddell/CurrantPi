@@ -106,7 +106,7 @@ i.demo-icon{
 
 .title-area{
   border-bottom: 1px solid #ddd;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .title-brand{
@@ -124,6 +124,7 @@ i.demo-icon{
 
 .title-logo{
   display: inline-block;
+  min-width: 60px;
 }
 
 .title-logo > .title-image{
