@@ -37,6 +37,14 @@ h6 {
   font-family: 'Varela Round', sans-serif;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 p{
   margin: 2px 0 2px;
 }
@@ -98,6 +106,7 @@ i.demo-icon{
 
 .title-area{
   border-bottom: 1px solid #ddd;
+  padding-bottom: 25px;
 }
 
 .title-logo{
@@ -109,15 +118,27 @@ i.demo-icon{
   margin: 19px 0 10px;
 }
 
+/* tweak the title area so it lies nicer */
 .title-text{
-  text-align: center;
+  text-align: left;
 }
 
-.title-logo > h4{
-  margin-top: 8px;
-  margin-bottom: 0;
-  font-size: 16px;
-} 
+.title-logo{
+  text-align: right;
+}
+
+.title-logo > .title-image{
+  text-align: center;
+  margin-top: 10px;
+  background: url(../img/Raspberry_Pi_Logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position-x: 50%;
+  display: block;
+  height: 80px;
+  line-height: 12.2em;
+}
 
 /*  Widgets:
  *
@@ -241,31 +262,21 @@ td.membar-key{
     margin-bottom: 2rem;
   }
 
+  .title-area {
+    padding-bottom: 10px;
+  }
+
   /* dont force a wider percentage bar on a smaller screen */
   #storage_pct_bars{
    min-width: 8em;
   }
 
-  /* tweak the title area so it lies nicer */
-  .title-text{
-    text-align: left;
+  h1 {
+    font-size: 36px;
   }
 
-  .title-logo{
-    text-align: right;
-  }
-
-  .title-logo > .title-image{
-    text-align: center;
-    margin-top: 10px;
-    background: url(../img/Raspberry_Pi_Logo.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 60px;
-    background-position-x: 50%;
-    display: block;
-    height: 80px;
-    line-height: 12.2em;
+  h3 {
+    font-size: 24px;
   }
 
 }
