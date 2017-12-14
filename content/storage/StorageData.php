@@ -56,7 +56,8 @@ class StorageData implements CurrantModule
 
     private function prepareColumns($row)
     {
-        return array_values(array_filter(explode(' ', $row), 'strlen'));
+        // If names of disks contain spaces (and then lower case char.), still match them as one string
+        return array_values(array_filter(preg_split('/(\s+)(?=[^a-zA-Z])/', $row), 'strlen'));
     }
 
     public function getData()
