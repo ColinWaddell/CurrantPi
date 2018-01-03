@@ -41,7 +41,7 @@ class NetworkData implements CurrantModule
         $data->up = StringHelpers::prettyBaud($rates[1]);
 
         $data->ip_address = trim($ip_address);
-        $data->subnet_mask = $subnet_mask;
+        $data->subnet_mask = trim($subnet_mask);
 
         return $data;
     }
