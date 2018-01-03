@@ -26,6 +26,9 @@ class NetworkData implements CurrantModule
          *
          * Also using one of the scripts in lib/string_helpers.php to
          * print the network speed in either b/s, Kb/s or Gb/s.
+         *
+         * The local IP address and subnet mask are retrieved using the
+         * 'ip' command.
          */
 
         $output = shell_exec('sh ./lib/transfer_rate.sh ' . $this->interface);
