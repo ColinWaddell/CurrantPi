@@ -31,8 +31,8 @@ class NetworkData implements CurrantModule
         $output = shell_exec('sh ./lib/transfer_rate.sh ' . $this->interface);
         $rates = explode(' ', $output);
 
-        $ip_address = shell_exec("ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1");
-        $subnet_mask = shell_exec("ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f2");
+        $ip_address = shell_exec("ip addr show " . $this->interface . " | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1");
+        $subnet_mask = shell_exec("ip addr show " . $this->interface . " | grep 'inet\b' | awk '{print $2}' | cut -d/ -f2");
 
         // data object
         $data = new \stdClass();
