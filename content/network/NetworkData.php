@@ -31,11 +31,17 @@ class NetworkData implements CurrantModule
         $output = shell_exec('sh ./lib/transfer_rate.sh ' . $this->interface);
         $rates = explode(' ', $output);
 
+        $ip_address = shell_exec("ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1");
+        $subnet_mask = shell_exec("ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f2");
+
         // data object
         $data = new \stdClass();
 
         $data->down = StringHelpers::prettyBaud($rates[0]);
         $data->up = StringHelpers::prettyBaud($rates[1]);
+
+        $data->ip_address = trim($ip_address);
+        $data->subnet_mask = $subnet_mask;
 
         return $data;
     }

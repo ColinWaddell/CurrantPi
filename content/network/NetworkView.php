@@ -12,6 +12,10 @@ $network_data = $network->getData();
 <table class="table table-striped table-hover">
   <tbody>
   <tr>
+      <td><p>IP address:</p></td>
+      <td><p class="text-right"><?php echo $network_data->ip_address . "/" . $network_data->subnet_mask;?></p></td>
+  </tr>
+  <tr>
     <td><p>Down:</p></td>
     <td><p class="text-right"><?php echo $network_data->down;?></p></td>
   </tr>
