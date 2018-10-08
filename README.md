@@ -112,4 +112,4 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 License
 =======
-<p>&copy; 2017 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://opensource.org/licenses/MIT"> MIT License.</a>
+<p>&copy; 2018 <a href="http://colinwaddell.com/">Colin Waddell</a> under the terms of the<a href="https://opensource.org/licenses/MIT"> MIT License.</a>
