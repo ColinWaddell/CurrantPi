@@ -108,8 +108,6 @@ When contributing to CurrantPi keep in mind that the target audience wants to un
 
 **Code should be simple enough that any eager beginner can follow it.**
 
-*If you are keen to see Currant Pi implemented using an MVC framework, please see the [SlimMVC branch](https://github.com/ColinWaddell/CurrantPi/tree/slimmvc) created by github user [sio-iago](https://github.com/sio-iago).*
-
 <hr />
 
 License
