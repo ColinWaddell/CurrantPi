@@ -47,7 +47,7 @@ Just copy and paste each section into a terminal on your Rasbberry Pi and hit en
 
 1. First you'll need to have a webserver up and running on your Pi. The following will install and setup lighttp on your Raspberry Pi. I'm assuming you're running an installation which uses the ```apt``` distro system.
     ```
-    sudo apt-get install lighttpd php5-cgi
+    sudo apt-get install lighttpd php7.0-cgi
     sudo lighttpd-enable-mod fastcgi fastcgi-php
     sudo service lighttpd force-reload
     ```
