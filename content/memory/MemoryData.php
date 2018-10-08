@@ -29,7 +29,7 @@ class MemoryData implements CurrantModule
         $mem_free = intval(shell_exec("free -m | awk '/buffers\/cache/ {print $3}'"));
         $mem_total = intval(shell_exec("free -m | awk '/Mem/ {print $2}'"));
 
-        $used_act = intval(shell_exec("free | awk '/buffers\/cache/ {print $3}'"));
+        $used_act = intval(shell_exec("free | awk '/Mem/ {print $3}'"));
         $free = intval(shell_exec("free | awk '/Mem/ {print $4}'"));
         $buffers = intval(shell_exec("free | awk '/Mem/ {print $6}'"));
         $cache = intval(shell_exec("free | awk '/Mem/ {print $7}'"));
