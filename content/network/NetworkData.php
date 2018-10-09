@@ -26,16 +26,25 @@ class NetworkData implements CurrantModule
          *
          * Also using one of the scripts in lib/string_helpers.php to
          * print the network speed in either b/s, Kb/s or Gb/s.
+         *
+         * The local IP address and subnet mask are retrieved using the
+         * 'ip' command.
          */
 
         $output = shell_exec('sh ./lib/transfer_rate.sh ' . $this->interface);
         $rates = explode(' ', $output);
+
+        $ip_address = shell_exec("ip addr show " . $this->interface . " | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1");
+        $subnet_mask = shell_exec("ip addr show " . $this->interface . " | grep 'inet\b' | awk '{print $2}' | cut -d/ -f2");
 
         // data object
         $data = new \stdClass();
 
         $data->down = StringHelpers::prettyBaud($rates[0]);
         $data->up = StringHelpers::prettyBaud($rates[1]);
+
+        $data->ip_address = trim($ip_address);
+        $data->subnet_mask = trim($subnet_mask);
 
         return $data;
     }
